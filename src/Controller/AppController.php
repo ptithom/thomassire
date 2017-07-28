@@ -60,6 +60,10 @@ class AppController extends Controller
      */
     public function beforeRender(Event $event)
     {
+
+        // localise by class attr body
+        $this->set('class_body', $this->request->params['controller'].'-'.$this->request->params['action']);
+
         if (!array_key_exists('_serialize', $this->viewVars) &&
             in_array($this->response->type(), ['application/json', 'application/xml'])
         ) {
