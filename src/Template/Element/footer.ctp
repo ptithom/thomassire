@@ -6,6 +6,7 @@
 </div>
 <div class="link_footer pull-right">
     <ul>
+        <li><i class="fa fa-github" aria-hidden="true"></i></li>
         <li><i class="fa fa-rss" aria-hidden="true"></i></li>
         <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
         <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
