@@ -8,10 +8,10 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum interdum leo. Donec fringilla elementum sem ut accumsan. Quisque erat est, viverra id velit sit amet, dignissim feugiat turpis. Praesent pellentesque ex eu diam aliquet dictum.
             </p>
             <ul class="list_picto">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+                <li><i class="fa fa-html5" aria-hidden="true"></i></li>
+                <li><i class="fa fa-css3" aria-hidden="true"></i></li>
+                <li><i class="fa fa-wordpress" aria-hidden="true"></i></li>
+                <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
             </ul>
         </div>
     </li>
@@ -23,10 +23,12 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum interdum leo. Donec fringilla elementum sem ut accumsan. Quisque erat est, viverra id velit sit amet, dignissim feugiat turpis. Praesent pellentesque ex eu diam aliquet dictum.
             </p>
             <ul class="list_picto">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+                <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                <li><i class="fa fa-wordpress" aria-hidden="true"></i></li>
+                <li><i class="fa fa-birthday-cake" aria-hidden="true"></i></li>
+                <li><i class="fa fa-gamepad" aria-hidden="true"></i></li>
+                <li><i class="fa fa-code" aria-hidden="true"></i></i></li>
+                <li><i class="fa fa-sign-in" aria-hidden="true"></i></li>
             </ul>
         </div>
     </li>
@@ -56,7 +58,11 @@
                 <p class="desc">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum interdum leo. Donec fringilla elementum sem ut accumsan. Quisque erat est, viverra id velit sit amet, dignissim feugiat turpis. Praesent pellentesque ex eu diam aliquet dictum.
                 </p>
-
+                <ul class="list_picto">
+                    <li><i class="fa fa-html5" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-key" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-map" aria-hidden="true"></i></li>
+                </ul>
             </div>
         </div>
 
@@ -66,6 +72,12 @@
                 <p class="desc">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum interdum leo. Donec fringilla elementum sem ut accumsan. Quisque erat est, viverra id velit sit amet, dignissim feugiat turpis. Praesent pellentesque ex eu diam aliquet dictum.
                 </p>
+        <ul class="list_picto">
+            <li><i class="fa fa-linux" aria-hidden="true"></i></li>
+            <li><i class="fa fa-gitlab" aria-hidden="true"></i></li>
+            <li><i class="fa fa-git" aria-hidden="true"></i></li>
+            <li><i class="fa fa-database" aria-hidden="true"></i></li>
+        </ul>
             </div>
         </div>
     </li>
