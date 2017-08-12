@@ -13,10 +13,10 @@
                 Persuadé que le web d'aujourd'hui doit pouvoir être adaptatif et intuitif.
             </p>
 
-            <p>
-                Je suis également passionné et curieux des technologies émergentes.
-                J'aime découvrir et apprendre pour étendre toujours plus mes cercle de compétence.
-            </p>
+            <!--<p>-->
+                <!--Je suis également passionné et curieux des technologies émergentes.-->
+                <!--J'aime découvrir et apprendre pour étendre toujours plus mes cercle de compétence.-->
+            <!--</p>-->
         </div>
         <div class="citation">
             "LE WEB NE VA PAS CHANGER LE MONDE, CERTAINEMENT PAS DANS LES DIX PROCHAINES ANNÉES. IL VA AUGMENTER LE MONDE."
@@ -25,34 +25,47 @@
 
     </div>
     <div class="col-md-3">
-        <a href="https://drive.google.com/open?id=0ByEW5T63CJzPWHp2eXNScWo0cWc" class="btn_cv" target="_blank">
-            <i class="fa fa-address-card-o" aria-hidden="true"></i>
-        </a>
+
     </div>
 </div>
 
-<hr>
+<div class="wrapper_hobbies">
 
-<ul class="list_hobbies">
-    <li >
-        <i class="fa fa-youtube-play" aria-hidden="true"></i>
-        <p>Curieux</p>
-    </li>
-    <li >
-        <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <p>Ecologie</p>
-    </li>
-    <li >
-        <i class="fa fa-camera-retro" aria-hidden="true"></i>
-        <p>Photographie</p>
-    </li>
-    <li >
-        <i class="fa fa-code" aria-hidden="true"></i>
-        <p>Créativité</p>
-    </li>
-    <li >
-        <i class="fa fa-share-alt" aria-hidden="true"></i>
-        <p>Partage</p>
-    </li>
-</ul>
+    <p class="sub_title">Je me définie par :</p>
+    <ul class="list_hobbies">
+        <li class="hobbie">
+            <i class="fa fa-youtube-play" aria-hidden="true"
+               data-toggle="popover" placement="bottom" data-content="La curiosité" ></i>
+        </li>
+        <li class="hobbie">
+            <i class="fa fa-code" aria-hidden="true"
+               data-toggle="popover" placement="bottom" data-content="La creativité" ></i>
+        </li>
+        <li class="hobbie">
+            <i class="fa fa-share-alt" aria-hidden="true"
+               data-toggle="popover" placement="bottom" data-content="Le partage" ></i>
+        </li>
+        <li class="hobbie">
+            <i class="fa fa-camera-retro" aria-hidden="true"
+               data-toggle="popover" placement="bottom" data-content="La photographie" ></i>
+        </li>
+        <li class="hobbie">
+            <i class="fa fa-music" aria-hidden="true"
+               data-toggle="popover" placement="bottom" data-content="La musique" ></i>
+        </li>
+        <li class="hobbie">
+            <i class="fa fa-gamepad" aria-hidden="true"
+               data-toggle="popover" placement="bottom" data-content="Les jeux de société" ></i>
+        </li>
+        <li class="hobbie">
+            <i class="fa fa-pagelines" aria-hidden="true"
+               data-toggle="popover" placement="bottom" data-content="L'étique" ></i>
+        </li>
+        <li class="hobbie">
+            <i class="fa fa-road" aria-hidden="true"
+               data-toggle="popover" placement="bottom" data-content="Le voyage" ></i>
+        </li>
+
+    </ul>
+<div>
 

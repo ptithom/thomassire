@@ -61,6 +61,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->element('footer'); ?>
     </footer>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
     <div class="hidden wait">
         <svg class="lds-message" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="translate(20 50)">
             <circle cx="0" cy="0" r="6" fill="#1d3f72" transform="scale(0.0100645 0.0100645)">

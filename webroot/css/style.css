@@ -1,5 +1,6 @@
 ul {
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
 
 .hidden {
   display: none; }
@@ -8,6 +9,62 @@ ul {
   width: 150px;
   margin: auto;
   text-align: center; }
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 60px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #50beb7;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 50%;
+  /* Rounded corners */ }
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */ }
+
+footer {
+  background-color: #292b2c;
+  color: white;
+  position: relative;
+  padding: 15px; }
+  footer .reference {
+    position: absolute;
+    font-size: 14px;
+    bottom: 0;
+    left: 10px;
+    padding: 15px;
+    font-style: italic; }
+  footer .link_footer {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    padding: 15px;
+    font-size: 14px; }
+    footer .link_footer ul {
+      margin: 0;
+      margin-right: 20px; }
+      footer .link_footer ul li {
+        font-size: 16px;
+        margin-right: 10px;
+        display: inline-block; }
 
 .slick-arrow {
   position: absolute;
@@ -34,7 +91,11 @@ ul {
     margin: 150px;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 25px 40px;
-    color: black; }
+    color: black;
+    -webkit-box-shadow: 1.5px 2.598px 6px 0 #d4d7df;
+    box-shadow: 1.5px 2.598px 6px 0 #424242;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s; }
     .banner .title .top_title {
       text-transform: uppercase; }
     .banner .title .sub_title {
@@ -52,6 +113,16 @@ ul {
     margin: 0;
     margin-bottom: 20px;
     color: white; }
+    #skills .wrapper_skill.lg-size {
+      -webkit-transition-duration: .4s;
+      transition-duration: .4s;
+      -webkit-box-shadow: 1.5px 2.598px 6px 0 #d4d7df;
+      box-shadow: 1.5px 2.598px 6px 0 #d4d7df; }
+    #skills .wrapper_skill.md-size .container_content {
+      -webkit-transition-duration: .4s;
+      transition-duration: .4s;
+      -webkit-box-shadow: 1.5px 2.598px 6px 0 #d4d7df;
+      box-shadow: 1.5px 2.598px 6px 0 #d4d7df; }
     #skills .wrapper_skill .container_gif {
       background-size: cover;
       background-repeat: no-repeat;
@@ -105,13 +176,14 @@ ul {
         #skills .wrapper_skill .container_content .list_picto li {
           display: inline-block;
           margin: 0px 15px; }
+    #skills .wrapper_skill > .col-md-6 .container_content {
+      background-color: #50beb7; }
     #skills .wrapper_skill > .col-md-6:first-child {
       padding-left: 0; }
     #skills .wrapper_skill > .col-md-6:last-child {
       padding-right: 0; }
 
 #xp {
-  background-color: #50beb7;
   padding: 40px 0px; }
   #xp .title {
     font-weight: 500;
@@ -161,18 +233,39 @@ ul {
   #hobbies .title {
     text-transform: uppercase;
     border-bottom: 1px solid white;
-    margin-bottom: 25px;
-    color: white; }
+    margin-bottom: 35px;
+    color: white;
+    position: relative; }
+    #hobbies .title a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      width: auto;
+      font-size: inherit; }
   #hobbies .list_hobbies {
     margin-top: 35px;
     text-align: center;
     font-size: 14px;
     font-weight: 200;
     font-style: italic; }
-    #hobbies .list_hobbies .fa {
+    #hobbies .list_hobbies .hobbie .fa {
+      cursor: pointer;
       font-size: 35px;
       display: inline-block;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      padding: 20px;
+      background-color: #292b2c;
+      border-radius: 50%;
+      -webkit-box-shadow: 1.5px 2.598px 6px 0 #d4d7df;
+      box-shadow: 1.5px 2.598px 6px 0 #424242;
+      border-radius: 50%;
+      -webkit-transition-duration: .4s;
+      transition-duration: .4s; }
+  #hobbies .wrapper_hobbies {
+    margin-top: 35px; }
+    #hobbies .wrapper_hobbies .sub_title {
+      text-transform: uppercase; }
   #hobbies .btn_cv {
     font-size: 45px;
     text-align: center;
@@ -186,5 +279,83 @@ ul {
     font-style: italic;
     font-size: 14px;
     width: 80%; }
+
+#contact {
+  background-color: #50beb7;
+  padding: 40px 0px; }
+  #contact .title {
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    margin-bottom: 25px;
+    color: white; }
+  #contact form textarea {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 0;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-box-shadow: 1.5px 2.598px 6px 0 #949596 inset;
+    box-shadow: 1.5px 2.598px 6px 0 #949596 inset; }
+  #contact form input, #contact form select, #contact form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 0;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-box-shadow: 1.5px 2.598px 6px 0 #949596 inset;
+    box-shadow: 1.5px 2.598px 6px 0 #949596 inset; }
+  #contact form button {
+    text-align: center;
+    background-color: #292b2c;
+    -webkit-box-shadow: 1.5px 2.598px 6px 0 #414244 inset;
+    box-shadow: 1.5px 2.598px 6px 0 #414244 inset;
+    color: white; }
+
+#feed .wrapper_feed {
+  position: relative; }
+  #feed .wrapper_feed .list_cat_feed {
+    position: absolute;
+    top: 0px;
+    left: -35px;
+    cursor: pointer; }
+  #feed .wrapper_feed li.block_feed {
+    background-color: #292b2c;
+    color: white;
+    position: relative;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 1.5px 2.598px 6px 0 #d4d7df;
+    box-shadow: 1.5px 2.598px 6px 0 #424242; }
+    #feed .wrapper_feed li.block_feed .picto {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 25px; }
+    #feed .wrapper_feed li.block_feed .title_post {
+      padding: 15px 0;
+      font-size: 16px; }
+    #feed .wrapper_feed li.block_feed .data-post {
+      position: absolute;
+      bottom: 15px;
+      right: 15px; }
+      #feed .wrapper_feed li.block_feed .data-post p {
+        margin: 0; }
+    #feed .wrapper_feed li.block_feed .back_img_post {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 80px; }
+      #feed .wrapper_feed li.block_feed .back_img_post .title_post {
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.31);
+        text-transform: uppercase;
+        font-size: 16px; }
+    #feed .wrapper_feed li.block_feed .content {
+      padding: 15px;
+      padding-bottom: 45px;
+      font-size: 14px;
+      line-height: 16px; }
 
 /*# sourceMappingURL=style.css.map */
