@@ -1,0 +1,190 @@
+ul {
+  padding: 0; }
+
+.hidden {
+  display: none; }
+
+.wait {
+  width: 150px;
+  margin: auto;
+  text-align: center; }
+
+.slick-arrow {
+  position: absolute;
+  top: 50%; }
+  .slick-arrow.fa-chevron-right {
+    right: -20px; }
+  .slick-arrow.fa-chevron-left {
+    left: -20px; }
+
+.wrapper_container {
+  margin-top: 56px; }
+  .wrapper_container > section {
+    margin-top: 40px; }
+
+.banner {
+  overflow: hidden;
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/banner.jpg"); }
+  .banner .title {
+    text-align: center;
+    margin: 150px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 25px 40px;
+    color: black; }
+    .banner .title .top_title {
+      text-transform: uppercase; }
+    .banner .title .sub_title {
+      text-transform: lowercase;
+      font-size: 2rem; }
+
+#skills {
+  margin-top: -140px; }
+  #skills > .title {
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+    color: white; }
+  #skills .wrapper_skill {
+    margin: 0;
+    margin-bottom: 20px;
+    color: white; }
+    #skills .wrapper_skill .container_gif {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      overflow: hidden; }
+      #skills .wrapper_skill .container_gif:before, #skills .wrapper_skill .container_gif:after {
+        content: "";
+        display: block;
+        background-color: #292b2c;
+        position: absolute;
+        top: -25%;
+        right: -75%;
+        width: 100%;
+        height: 100%;
+        -ms-transform: rotate(65deg);
+        /* IE 9 */
+        -webkit-transform: rotate(65deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(65deg); }
+      #skills .wrapper_skill .container_gif:after {
+        content: "";
+        display: block;
+        background-color: #292b2c;
+        position: absolute;
+        bottom: -25%;
+        right: -75%;
+        top: inherit;
+        width: 100%;
+        height: 100%;
+        -ms-transform: rotate(-65deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-65deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-65deg); }
+    #skills .wrapper_skill .container_content {
+      background-color: #292b2c;
+      padding: 25px 40px; }
+      #skills .wrapper_skill .container_content .title {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-bottom: 10px; }
+      #skills .wrapper_skill .container_content .desc {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 10px; }
+      #skills .wrapper_skill .container_content .list_picto {
+        list-style: none;
+        padding: 0; }
+        #skills .wrapper_skill .container_content .list_picto li {
+          display: inline-block;
+          margin: 0px 15px; }
+    #skills .wrapper_skill > .col-md-6:first-child {
+      padding-left: 0; }
+    #skills .wrapper_skill > .col-md-6:last-child {
+      padding-right: 0; }
+
+#xp {
+  background-color: #50beb7;
+  padding: 40px 0px; }
+  #xp .title {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  #xp .list_xp li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+  #xp .list_xp li[data-name] {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    height: 150px; }
+  #xp .list_xp img {
+    cursor: pointer;
+    margin: auto;
+    max-height: 100px;
+    max-width: 80%; }
+  #xp .content_more {
+    position: relative;
+    margin: auto;
+    margin-top: 25px; }
+    #xp .content_more > .row {
+      width: 90%;
+      margin: auto;
+      padding-top: 20px;
+      padding: 20px 30px;
+      border-top: 1px solid white; }
+    #xp .content_more img {
+      max-width: 100%; }
+    #xp .content_more .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white;
+      cursor: pointer;
+      z-index: 1; }
+
+#hobbies {
+  background-image: url("../img/wall_perso.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 40px 0px;
+  margin-top: 0px; }
+  #hobbies .title {
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    margin-bottom: 25px;
+    color: white; }
+  #hobbies .list_hobbies {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    font-style: italic; }
+    #hobbies .list_hobbies .fa {
+      font-size: 35px;
+      display: inline-block;
+      margin-bottom: 10px; }
+  #hobbies .btn_cv {
+    font-size: 45px;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100%; }
+    #hobbies .btn_cv .fa {
+      color: white; }
+  #hobbies .citation {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 14px;
+    width: 80%; }
+
+/*# sourceMappingURL=style.css.map */
