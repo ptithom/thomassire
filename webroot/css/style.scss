@@ -1,0 +1,238 @@
+ul{
+  padding: 0;
+}
+.hidden{
+  display: none;
+}
+.wait{
+  width: 150px;
+  margin: auto;
+  text-align: center;
+}
+
+.slick-arrow{
+  position: absolute;
+  top: 50%;
+  &.fa-chevron-right{
+    right: -20px;
+  }
+  &.fa-chevron-left{
+    left: -20px;
+  }
+}
+
+.wrapper_container{
+  margin-top: 56px;  //height nav
+  > section{
+    margin-top: 40px;
+  }
+}
+
+.banner{
+  overflow: hidden;
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/banner.jpg");
+  .title{
+    text-align: center;
+    margin: 150px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 25px 40px;
+    color: black;
+    .top_title{
+      text-transform: uppercase;
+    }
+    .sub_title{
+      text-transform: lowercase;
+      font-size: 2rem;
+    }
+  }
+}
+
+#skills{
+  margin-top: -140px;
+  > .title{
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+    color: white;
+  }
+  .wrapper_skill{
+    margin: 0;
+    margin-bottom: 20px;
+
+    color: white;
+    .container_gif{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+      &:before , &:after{
+        content: "";
+        display: block;
+        background-color: #292b2c;
+        position: absolute;
+        top: -25%;
+        right: -75%;
+        width: 100%;
+        height: 100%;
+        -ms-transform: rotate(65deg); /* IE 9 */
+        -webkit-transform: rotate(65deg); /* Chrome, Safari, Opera */
+        transform: rotate(65deg);
+      }
+      &:after{
+        content: "";
+        display: block;
+        background-color: #292b2c;
+        position: absolute;
+        bottom: -25%;
+        right: -75%;
+        top: inherit;
+        width: 100%;
+        height: 100%;
+        -ms-transform: rotate(-65deg); /* IE 9 */
+        -webkit-transform: rotate(-65deg); /* Chrome, Safari, Opera */
+        transform: rotate(-65deg);
+      }
+    }
+    .container_content{
+      background-color: #292b2c;
+      padding: 25px 40px;
+      .title{
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .desc{
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 10px;
+
+      }
+      .list_picto{
+        list-style: none;
+        padding: 0;
+        li{
+          display: inline-block;
+          margin: 0px 15px;
+        }
+      }
+    }
+    > .col-md-6:first-child{
+      padding-left: 0;
+    }
+    > .col-md-6:last-child{
+      padding-right: 0;
+    }
+  }
+}
+
+#xp{
+  background-color: #50beb7;
+  padding: 40px 0px;
+  .title{
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .list_xp{
+    li{
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    li[data-name]{
+      background-color: rgba(255,255,255,0.2);
+      padding: 8px;
+      height: 150px;
+    }
+    img{
+      cursor: pointer;
+      margin: auto;
+      max-height: 100px;
+      max-width: 80%;
+
+    }
+  }
+  .content_more{
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+    > .row{
+      width: 90%;
+      margin: auto;
+      padding-top: 20px;
+      padding: 20px 30px;
+      border-top: 1px solid white;
+
+    }
+    img{
+      max-width: 100%;
+    }
+    .close{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white;
+      cursor: pointer;
+      z-index: 1;
+    }
+  }
+}
+
+#hobbies{
+  background-image: url("../img/wall_perso.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 40px 0px;
+  margin-top: 0px;
+
+  .title{
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    margin-bottom: 25px;
+    color: white;
+  }
+  .list_hobbies{
+    margin-top: 35px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    font-style: italic;
+    .fa{
+      font-size: 35px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+
+  .btn_cv{
+    font-size: 45px;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    .fa{
+      color: white;
+    }
+  }
+  .citation{
+    font-weight: 200;
+    font-style: italic;
+    font-size: 14px;
+    width: 80%;
+  }
+  .contant_presentation{
+
+  }
+}
+
+#feed{
+
+}

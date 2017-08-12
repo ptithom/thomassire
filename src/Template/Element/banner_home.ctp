@@ -1,4 +1,7 @@
-<h1>
-    <a href="">Thomas Sire</a>
-    <div class="subtitble"> - DEVELOPPEUR WEB ET MOBILE - </div>
-</h1>
+
+<div class="banner">
+    <h1 class="title">
+        <p class="top_title">Thomas Sire</p>
+        <div class="sub_title"> - DEVELOPPEUR WEB ET MOBILE - </div>
+    </h1>
+</div>

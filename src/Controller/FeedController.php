@@ -26,6 +26,13 @@ class FeedController extends AppController
 
     public function index(){
 
+        /*
+         * list mixed feed with date
+         *
+         *  -> get feed bolg
+         *  -> get feed twitter
+         */
+
     }
 
 

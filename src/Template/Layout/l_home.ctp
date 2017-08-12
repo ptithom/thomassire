@@ -32,7 +32,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
 
+            <link rel="stylesheet" type="text/css" href="/webroot/css/style.css" />
 
 
 
@@ -47,17 +52,41 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
+
+
+    <div class="wrapper_container">
         <?= $this->fetch('content') ?>
     </div>
     <footer>
         <?= $this->element('footer'); ?>
     </footer>
 
+    <div class="hidden wait">
+        <svg class="lds-message" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="translate(20 50)">
+            <circle cx="0" cy="0" r="6" fill="#1d3f72" transform="scale(0.0100645 0.0100645)">
+                <animateTransform attributeName="transform" type="scale" begin="-0.375s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            </circle>
+        </g><g transform="translate(40 50)">
+            <circle cx="0" cy="0" r="6" fill="#5699d2" transform="scale(0.237792 0.237792)">
+                <animateTransform attributeName="transform" type="scale" begin="-0.25s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            </circle>
+        </g><g transform="translate(60 50)">
+            <circle cx="0" cy="0" r="6" fill="#d8ebf9" transform="scale(0.588232 0.588232)">
+                <animateTransform attributeName="transform" type="scale" begin="-0.125s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            </circle>
+        </g><g transform="translate(80 50)">
+            <circle cx="0" cy="0" r="6" fill="#71c2cc" transform="scale(0.895498 0.895498)">
+                <animateTransform attributeName="transform" type="scale" begin="0s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            </circle>
+        </g></svg>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
 
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
             integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
             crossorigin="anonymous"></script>
