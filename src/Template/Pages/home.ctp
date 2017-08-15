@@ -44,7 +44,8 @@
     <div class="container clearfix">
         <h2 class="title">Contacte</h2>
         <div class="wrapper_contact">
-            <form>
+            <div class="message hidden"></div>
+            <form  id="contactForm" action="/Pages/contact" method="post">
             <div class="form-group">
                 <div class="row">
                     <div class="col-md-9">

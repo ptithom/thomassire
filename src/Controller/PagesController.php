@@ -71,4 +71,13 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
+
+    public function contact(){
+
+
+        echo json_encode(["error" => 0 , "message" => "Merci, votre email a bien était envoyer."]);
+
+        die();
+    }
+
 }

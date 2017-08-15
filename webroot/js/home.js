@@ -60,7 +60,32 @@ $(document).on('click','.view_project',function(){
 
 });
 
+// this is the id of the form
+$("#contactForm").submit(function(e) {
 
+    $.ajax({
+        type: "POST",
+        url: $(this).attr('action'),
+        data: $(this).serialize(), // serializes the form's elements.
+        dataType: 'json',
+        success: function(data)
+        {
+            if(data.error == 0){
+                $(".wrapper_contact #contactForm").hide('faste');
+                $(".wrapper_contact .message").html('<p>'+data.message+'</p>').show('faste');
+                setTimeout(function(){
+                    $(".wrapper_contact #contactForm").show('faste');
+                    $(".wrapper_contact .message").hide('faste');
+                }, 3000);
+            }else{
+
+            }
+            console.log(data); // show response from the php script.
+        }
+    });
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+});
 
 $(document).on('click','#xp .close',function(){
     $('#xp .content_more').html("");
