@@ -27,10 +27,14 @@ class SocietesController extends AppController
     public function showList(){
 
         //get ilste société
-        /*
-         * slider logo
-         * popup au click -> ajax info societé
-         */
+
+        $data_societes = $this->Societes->find()
+            ->select(['id', 'path_logo','name'])
+            ->order(['d_start' => 'DESC'])
+            ->all()
+            ->toArray();
+        $this->set(["societes" => $data_societes]);
+
 
     }
 
@@ -43,6 +47,16 @@ class SocietesController extends AppController
          * poste
          * skill developper
          */
+
+
+        $id_societe = $this->request->data['id'];
+
+
+        $data_societe = $this->Societes->find()
+            ->where(['id' => $id_societe])
+            ->first()
+            ->toArray();
+        $this->set(["societe" => $data_societe]);
 
     }
 

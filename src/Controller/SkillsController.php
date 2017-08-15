@@ -24,7 +24,7 @@ class SkillsController extends AppController
 {
 
 
-    public function info_skils(){
+    public function listProject(){
 
         // popup info
         /*
@@ -32,6 +32,8 @@ class SkillsController extends AppController
          *  -> name project
          *  -> link project
          */
+
+        die('ok');
 
     }
 

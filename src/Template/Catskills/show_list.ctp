@@ -1,84 +1,75 @@
 
 <ul>
-    <li class="row wrapper_skill lg-size">
-        <div class="col-md-3 container_gif" style="background-image:url(https://media.giphy.com/media/13nM50X6PJYBws/giphy.gif)"></div>
-        <div class="col-md-9 container_content">
-            <h3 class="title">Front End</h3>
-            <p class="desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum interdum leo. Donec fringilla elementum sem ut accumsan. Quisque erat est, viverra id velit sit amet, dignissim feugiat turpis. Praesent pellentesque ex eu diam aliquet dictum.
-            </p>
-            <ul class="list_picto">
-                <li><i class="fa fa-html5" aria-hidden="true"></i></li>
-                <li><i class="fa fa-css3" aria-hidden="true"></i></li>
-                <li><i class="fa fa-wordpress" aria-hidden="true"></i></li>
-                <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
-            </ul>
-        </div>
-    </li>
-    <li class="row wrapper_skill lg-size">
-        <div class="col-md-3 container_gif" style="background-image:url(https://media.giphy.com/media/omrlNyA5kqMXC/giphy.gif)"></div>
-        <div class="col-md-9 container_content">
-            <h3 class="title">Back END</h3>
-            <p class="desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum interdum leo. Donec fringilla elementum sem ut accumsan. Quisque erat est, viverra id velit sit amet, dignissim feugiat turpis. Praesent pellentesque ex eu diam aliquet dictum.
-            </p>
-            <ul class="list_picto">
-                <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
-                <li><i class="fa fa-wordpress" aria-hidden="true"></i></li>
-                <li><i class="fa fa-birthday-cake" aria-hidden="true"></i></li>
-                <li><i class="fa fa-gamepad" aria-hidden="true"></i></li>
-                <li><i class="fa fa-code" aria-hidden="true"></i></i></li>
-                <li><i class="fa fa-sign-in" aria-hidden="true"></i></li>
-            </ul>
-        </div>
-    </li>
-    <li class="row wrapper_skill md-size">
-        <div class="col-md-6">
-            <h3 class="container_content">
-                <div class="title">Hergonomie</div>
-                <p class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum interdum leo. Donec fringilla elementum sem ut accumsan. Quisque erat est, viverra id velit sit amet, dignissim feugiat turpis. Praesent pellentesque ex eu diam aliquet dictum.
-                </p>
-            </h3>
-        </div>
+    <?php $tmp_up = false; ?>
+    <?php foreach($cat_skills as $key => $cat_skill ): ?>
 
-        <div class="col-md-6">
-        <div class="container_content ">
-            <h3 class="title">Webmarketing</h3>
-            <p class="desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum interdum leo. Donec fringilla elementum sem ut accumsan. Quisque erat est, viverra id velit sit amet, dignissim feugiat turpis. Praesent pellentesque ex eu diam aliquet dictum.
-            </p>
-        </div>
-        </div>
-    </li>
-    <li class="row wrapper_skill md-size">
-        <div class="col-md-6">
-            <div class="container_content">
-                <h3 class="title">SEO</h3>
-                <p class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum interdum leo. Donec fringilla elementum sem ut accumsan. Quisque erat est, viverra id velit sit amet, dignissim feugiat turpis. Praesent pellentesque ex eu diam aliquet dictum.
-                </p>
-                <ul class="list_picto">
-                    <li><i class="fa fa-html5" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-key" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-map" aria-hidden="true"></i></li>
-                </ul>
-            </div>
-        </div>
+        <?php if($tmp_up){$tmp_up = false;continue;} ?>
 
-        <div class="col-md-6" >
-            <div class="container_content">
-                <h3 class="title">Sysadmin</h3>
-                <p class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum interdum leo. Donec fringilla elementum sem ut accumsan. Quisque erat est, viverra id velit sit amet, dignissim feugiat turpis. Praesent pellentesque ex eu diam aliquet dictum.
-                </p>
-        <ul class="list_picto">
-            <li><i class="fa fa-linux" aria-hidden="true"></i></li>
-            <li><i class="fa fa-gitlab" aria-hidden="true"></i></li>
-            <li><i class="fa fa-git" aria-hidden="true"></i></li>
-            <li><i class="fa fa-database" aria-hidden="true"></i></li>
-        </ul>
-            </div>
-        </div>
-    </li>
+        <?php if($cat_skill["col"] == "12"): ?>
+                <li class="row wrapper_skill lg-size" data-id_skill="<?= $cat_skill["id"] ?>">
+                        <div class="col-md-3 container_gif"
+                             style="background-image:url(<?= $cat_skill["path_media"] ?>)"></div>
+                    <div class="col-md-9 container_content">
+                        <h3 class="title"><?= $cat_skill["name"] ?></h3>
+                        <p class="desc">
+                            <?= $cat_skill["description"] ?>
+                        </p>
+                        <?php if(!empty($cat_skill["skills"] )): ?>
+                            <ul class="list_picto">
+                                <?php foreach($cat_skill["skills"] as  $skill ): ?>
+                                <li><?= $skill["name"] ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?>
+
+                        <div class="view_project"> Les projets <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+                    </div>
+                </li>
+
+                <li class="content_more">
+
+                </li>
+
+            <?php else: ?>
+
+            <li class="row wrapper_skill md-size">
+                <div class="col-md-6">
+                    <div class="container_content">
+                        <h3 class="title"><?= $cat_skill["name"] ?></h3>
+                        <p class="desc">
+                            <?= $cat_skill["description"] ?>
+                        </p>
+                        <?php if(!empty($cat_skill["skills"] )): ?>
+                            <ul class="list_picto">
+                                <?php foreach($cat_skill["skills"] as  $skill ): ?>
+                                    <li><?= $skill["name"] ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?>
+                    </div>
+                </div>
+
+                <?php $cat_skill = $cat_skills[$key+1]; $tmp_up = true; ?>
+
+                <div class="col-md-6">
+                    <div class="container_content ">
+                        <h3 class="title"><?= $cat_skill["name"] ?></h3>
+                        <p class="desc">
+                            <?= $cat_skill["description"] ?>
+                        </p>
+                        <?php if(!empty($cat_skill["skills"] )): ?>
+                            <ul class="list_picto">
+                                <?php foreach($cat_skill["skills"] as  $skill ): ?>
+                                    <li><?= $skill["name"] ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </li>
+
+        <?php endif; ?>
+    <?php endforeach; ?>
+
+
 </ul>

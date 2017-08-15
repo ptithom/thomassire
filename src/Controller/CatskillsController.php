@@ -35,6 +35,14 @@ class CatskillsController extends AppController
          *  -> SKILLS
          */
 
+        $data = $this->Catskills->find()
+            ->order(['col'=>'DESC'])
+            ->contain('Skills')
+            ->all()
+            ->toArray();
+        $this->set(["cat_skills" => $data]);
+
+
     }
 
 

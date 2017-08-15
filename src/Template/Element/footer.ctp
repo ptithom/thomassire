@@ -2,7 +2,7 @@
     Thomas SIRE © 2017
 </div>
 <div class="text-center">
-    Votre projet est ma passion.
+    <h2>Votre projet est ma passion.</h2>
 </div>
 <div class="link_footer pull-right">
     <ul>

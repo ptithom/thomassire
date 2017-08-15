@@ -14,14 +14,7 @@ $.ajax({
     type: "POST",
     url: "/Catskills/show_list",
     success: function(response) {
-        $('#skills .wrapper_skills').html(response).promise().done(function(){
-            $('ul.list_xp').slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                prevArrow:"<i class='fa fa-chevron-left' aria-hidden='true'></i>",
-                nextArrow:"<li class='fa fa-chevron-right' aria-hidden='true'></i>"
-            });
-        });
+        $('#skills .wrapper_skills').html(response)
     }
 });
 
@@ -31,13 +24,13 @@ $(document).ready(function(){
 });
 
 
-$(document).on('click','.list_xp li[data-name]',function(){
-    var name_s = $(this).data("ref");
+$(document).on('click','.list_xp li[data-id]',function(){
+    var id_s = $(this).data("id");
 
     $.ajax({
         type: "POST",
         url: "/Societes/info_societe",
-        data: "societe="+name_s,
+        data: "id="+id_s,
         beforeSend: function() {
             $('#xp .content_more').html($('.wait').clone().removeClass('hidden'))
         },
@@ -47,6 +40,28 @@ $(document).on('click','.list_xp li[data-name]',function(){
     });
 
 });
+
+$(document).on('click','.view_project',function(){
+    var elementli = $(this).closest('li');
+    var id_skill = elementli.data("id_skill");
+
+    $.ajax({
+        type: "POST",
+        url: "/Skills/list_project",
+        data: "id_skill="+id_skill,
+        beforeSend: function() {
+            $('#skills .content_more').hide();
+            elementli.next().html($('.wait').clone().removeClass('hidden')).show();
+        },
+        success: function(response) {
+            elementli.next().html(response);
+        }
+    });
+
+});
+
+
+
 $(document).on('click','#xp .close',function(){
     $('#xp .content_more').html("");
 });
@@ -55,15 +70,14 @@ $.ajax({
     type: "POST",
     url: "/Societes/show_list",
     success: function(response) {
-        $('#xp .wrapper_xp').html(response);
-    }
-});
-
-$.ajax({
-    type: "POST",
-    url: "/feed",
-    success: function(response) {
-        $('#feed .wrapper_feed').html(response);
+        $('#xp .wrapper_xp').html(response).promise().done(function(){
+            $('ul.list_xp').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow:"<i class='fa fa-chevron-left' aria-hidden='true'></i>",
+                nextArrow:"<li class='fa fa-chevron-right' aria-hidden='true'></i>"
+            });
+        });
     }
 });
 
@@ -75,15 +89,22 @@ function showfeed(source){
         url: "/feed",
         data : 'source=' + source,
         beforeSend: function() {
-            $('#feed .wrapper_feed').html($('.wait').clone().removeClass('hidden'))
+            $('#feed .content_feed').html($('.wait').clone().removeClass('hidden'))
         },
         success: function(response) {
-            $('#feed .wrapper_feed').html(response);
+            $('#feed .content_feed').html(response);
+            if($('#feed .list_cat_feed li.active').data('source') == 'all'){
+                $('#feed .list_cat_feed li.reset').hide('faste');
+            }else{
+                $('#feed .list_cat_feed li.reset').show('faste');
+            }
         }
     });
 }
 
-$(document).on('click','#feed .list_cat_feed',function(){
+$(document).on('click','#feed .list_cat_feed li',function(){
+    $('#feed .list_cat_feed li.active').removeClass('active');
+    $(this).addClass('active');
     var source = $(this).data('source');
     showfeed(source);
 });
