@@ -18,7 +18,7 @@ use Cake\Core\Configure;
 use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
-use SimplePie\SimplePie;
+use Abraham\TwitterOAuth\TwitterOAuth;
 
 
 class FeedController extends AppController
@@ -111,19 +111,41 @@ class FeedController extends AppController
 
     public function gettweeterpost(){
 
-        $desc = "On est pas bien la ! :)
-3eme écran installé au bureau.
-Je vais finir par y installer mon lit ^^… https://www.instagram.com/p/BPIf8cAAjm-/ ";
+        $consumerkey = "0lfYfh7nRfmjBGZLkqAbaAgDu";
+        $consumersecret = "F18620ghdYZHw7RpVwWqgcCZprmY29bEr1G02hrXsB8IV35Wnp";
+        $accesstoken = "3544679416-0xudhcUhTdYzopKqlqCQ2dnEgLbdConGa4Gfs4i";
+        $accesstokensecret = "Wevt7zjFSF3N5SEF61pF2usyDjQ0kjLv8hH8mJFAAPMKE";
 
-        $posts[] = array(
-            'type'    => 'twitter',
-            'title'   => "Dernier Tweets @PtiThoom",
-            'date'    => "15.June",
-            'link'    => "https://twitter.com/PtiThoom?lang=fr",
-            'content' => substr(trim(preg_replace('`Lire la suite(.)+$`', '', strip_tags($desc, '<br><br/><p></p>'))), 0, 500),
-        );
+        $connection = new TwitterOAuth($cons_key, $cons_secret, $oauth_token, $oauth_token_secret);
 
-        return $posts;
+        $array_tweets = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=EtienneGlemot&count=1");
+        echo '<ul class="list_tweets">';
+        if(!empty($array_tweets)){
+
+            foreach($array_tweets as $name ){
+                $newDate = date("d F", strtotime($name->created_at));
+                echo '<li class="block_tweet">';
+                echo '<p>'.$name->text.'</p>';
+                echo '<p class="date_tw">'.$newDate.'</p>';
+                echo '</li>';
+            }
+        }
+        echo '</ul>';
+        die();
+
+//        $desc = "On est pas bien la ! :)
+//3eme écran installé au bureau.
+//Je vais finir par y installer mon lit ^^… https://www.instagram.com/p/BPIf8cAAjm-/ ";
+//
+//        $posts[] = array(
+//            'type'    => 'twitter',
+//            'title'   => "Dernier Tweets @PtiThoom",
+//            'date'    => "15.June",
+//            'link'    => "https://twitter.com/PtiThoom?lang=fr",
+//            'content' => substr(trim(preg_replace('`Lire la suite(.)+$`', '', strip_tags($desc, '<br><br/><p></p>'))), 0, 500),
+//        );
+//
+//        return $posts;
 
     }
 
