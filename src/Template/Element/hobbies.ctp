@@ -1,15 +1,12 @@
 
 
 <div class="row">
-    <div class="col-md-9">
+    <div class="col-md-8">
         <div class="contant_presentation" >
             <p>
                 Développeur web, multi-tache, j'aime voir mes travaux être utilisés quotidiennement
                 et me donne les moyens pour que les utilisateurs puissent revenir
-                avec un bonne expérience d'utilisation.
-            </p>
-
-            <p>
+                avec un bonne expérience d'utilisation.<br>
                 Persuadé que le web d'aujourd'hui doit pouvoir être adaptatif et intuitif.
             </p>
 
@@ -30,8 +27,6 @@
 </div>
 
 <div class="wrapper_hobbies">
-
-    <p class="sub_title">Je me définie par :</p>
     <ul class="list_hobbies">
         <li class="hobbie">
             <i class="fa fa-youtube-play" aria-hidden="true"

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 ul {
   padding: 0;
   list-style: none; }
@@ -9,6 +10,13 @@ ul {
   width: 150px;
   margin: auto;
   text-align: center; }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
 
 #myBtn {
   display: none;
@@ -69,28 +77,17 @@ footer {
         display: inline-block; }
 
 .title.border_center {
-  position: relative;
   text-align: center;
-  width: 70%;
-  margin: auto; }
-  .title.border_center:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    top: 50%;
-    background-color: black;
-    z-index: -1;
-    left: 0; }
+  margin: auto;
+  font-family: 'Poppins', sans-serif; }
   .title.border_center span {
-    position: relative;
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    background-color: white;
-    z-index: 10;
+    margin-bottom: 25px;
+    color: #b5b1b1;
+    font-size: 12px;
     text-align: center;
-    padding: 0 5%; }
+    letter-spacing: .5em; }
 
 .slick-arrow {
   position: absolute;
@@ -100,12 +97,26 @@ footer {
   .slick-arrow.fa-chevron-left {
     left: -20px; }
 
-.wrapper_container {
-  margin-top: 56px; }
-  .wrapper_container > section {
-    margin-top: 40px; }
+.nav-top {
+  background-color: rgba(0, 0, 0, 0.33); }
+  .nav-top.navbar-inverse .navbar-nav .nav-link {
+    color: white; }
+  .nav-top.navbar-inverse .navbar-nav .active > .nav-link, .nav-top.navbar-inverse .navbar-nav .nav-link.active, .nav-top.navbar-inverse .navbar-nav .nav-link.open, .nav-top.navbar-inverse .navbar-nav .open > .nav-link {
+    color: #a5a39f; }
+  .nav-top .nav-link {
+    color: white; }
+
+.nav-link {
+  color: #a5a39f; }
+  .nav-link.logo {
+    background-color: rgba(0, 0, 0, 0.48);
+    font-weight: bold; }
+
+.wrapper_container > section {
+  margin-top: 40px; }
 
 .banner {
+  padding-top: 56px;
   overflow: hidden;
   min-height: 600px;
   background-position: center;
@@ -113,15 +124,21 @@ footer {
   background-repeat: no-repeat;
   background-image: url("../img/banner.jpg"); }
   .banner .title {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin: 150px;
-    background-color: rgba(255, 255, 255, 0.7);
+    margin: 150px 150px 300px 150px;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 25px 40px;
-    color: black;
+    color: #040404;
     -webkit-box-shadow: 1.5px 2.598px 6px 0 #d4d7df;
     box-shadow: 1.5px 2.598px 6px 0 #424242;
     -webkit-transition-duration: .4s;
     transition-duration: .4s; }
+    .banner .title .btn {
+      margin-top: 40px;
+      border: 1px solid;
+      padding: .5rem 2.5rem;
+      border-radius: 0; }
     .banner .title .top_title {
       text-transform: uppercase; }
     .banner .title .sub_title {
@@ -131,10 +148,13 @@ footer {
 #skills {
   margin-top: -140px; }
   #skills > .title {
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    border-bottom: 1px solid white;
-    margin-bottom: 15px;
-    color: white; }
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .5em; }
   #skills .view_project {
     position: absolute;
     bottom: 15px;
@@ -195,6 +215,7 @@ footer {
       background-color: #292b2c;
       padding: 25px 32px; }
       #skills .wrapper_skill .container_content .title {
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         text-transform: uppercase;
         font-size: 18px;
@@ -217,7 +238,8 @@ footer {
           display: inline-block;
           margin: 0px 15px; }
     #skills .wrapper_skill > .col-md-6 .container_content {
-      background-color: #50beb7; }
+      background-color: #50beb7;
+      height: 100%; }
     #skills .wrapper_skill > .col-md-6:first-child {
       padding-left: 0; }
     #skills .wrapper_skill > .col-md-6:last-child {
@@ -226,9 +248,11 @@ footer {
 #xp {
   padding: 40px 0px; }
   #xp .title {
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    letter-spacing: .4em; }
   #xp .list_xp li {
     text-align: center;
     display: flex;
@@ -242,7 +266,12 @@ footer {
     cursor: pointer;
     margin: auto;
     max-height: 100px;
-    max-width: 80%; }
+    max-width: 80%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
+    #xp .list_xp img:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%); }
   #xp .content_more {
     position: relative;
     margin: auto;
@@ -264,18 +293,20 @@ footer {
       z-index: 1; }
 
 #hobbies {
-  background-image: url("../img/wall_perso.jpg");
+  background: url(../img/wall_perso.jpg) center 0 no-repeat fixed;
   background-position: center;
   background-size: cover;
   color: white;
   padding: 40px 0px;
   margin-top: 0px; }
   #hobbies .title {
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    border-bottom: 1px solid white;
-    margin-bottom: 35px;
-    color: white;
-    position: relative; }
+    margin-bottom: 70px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .4em; }
     #hobbies .title a {
       position: absolute;
       top: 0;
@@ -283,6 +314,20 @@ footer {
       display: inline-block;
       width: auto;
       font-size: inherit; }
+  #hobbies .contant_presentation {
+    padding-left: 50px;
+    position: relative; }
+    #hobbies .contant_presentation:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 5px;
+      width: 27px;
+      top: 13px;
+      left: 0px;
+      background-color: white; }
+  #hobbies .citation {
+    margin-top: 40px; }
   #hobbies .list_hobbies {
     margin-top: 35px;
     text-align: center;
@@ -293,17 +338,9 @@ footer {
       cursor: pointer;
       font-size: 35px;
       display: inline-block;
-      margin-bottom: 10px;
-      padding: 20px;
-      background-color: #292b2c;
-      border-radius: 50%;
-      -webkit-box-shadow: 1.5px 2.598px 6px 0 #d4d7df;
-      box-shadow: 1.5px 2.598px 6px 0 #424242;
-      border-radius: 50%;
-      -webkit-transition-duration: .4s;
-      transition-duration: .4s; }
+      padding: 20px; }
   #hobbies .wrapper_hobbies {
-    margin-top: 35px; }
+    margin-top: 50px; }
     #hobbies .wrapper_hobbies .sub_title {
       text-transform: uppercase; }
   #hobbies .btn_cv {
@@ -322,12 +359,29 @@ footer {
 
 #contact {
   background-color: #50beb7;
-  padding: 40px 0px; }
+  padding: 40px 0px;
+  border-top: 6px solid #292b2c; }
   #contact .title {
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    border-bottom: 1px solid white;
     margin-bottom: 25px;
-    color: white; }
+    color: #292b2c;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: .4em; }
+  #contact .content {
+    color: #515556 !important;
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+    line-height: 25px; }
+    #contact .content .up {
+      color: white;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: initial; }
   #contact form textarea {
     width: 100%;
     height: 100%;
@@ -355,7 +409,7 @@ footer {
     color: white; }
 
 #feed .wrapper_feed {
-  margin-top: 40px;
+  margin-top: 70px;
   position: relative; }
   #feed .wrapper_feed .list_cat_feed {
     position: absolute;
@@ -398,6 +452,59 @@ footer {
       padding: 15px;
       padding-bottom: 45px;
       font-size: 14px;
-      line-height: 16px; }
+      line-height: 16px;
+      overflow: hidden; }
+
+@media screen and (max-width: 780px) {
+  .banner {
+    min-height: 390px; }
+    .banner .title {
+      margin: 5%; }
+      .banner .title .top_title {
+        font-size: 36px; }
+      .banner .title .sub_title {
+        text-transform: lowercase;
+        font-size: 22px; }
+
+  #skills > .title, #hobbies .title, #xp .title, .title.border_center, #contact .title {
+    font-size: 25px; }
+
+  #skills .wrapper_skill > .col-md-6:first-child, #skills .wrapper_skill > .col-md-6:last-child {
+    padding-right: 0px;
+    padding-left: 2px; }
+
+  #skills .wrapper_skill > .col-md-6:first-child {
+    margin-bottom: 20px; }
+
+  #skills .wrapper_skill .container_gif {
+    height: 150px; }
+    #skills .wrapper_skill .container_gif:after, #skills .wrapper_skill .container_gif:before {
+      content: none; }
+
+  #skills .wrapper_skill .container_content {
+    padding: 15px 15px 50px; }
+    #skills .wrapper_skill .container_content .desc {
+      font-size: 14px;
+      line-height: 17px; }
+
+  #skills .wrapper_skill > .col-md-6 .container_content {
+    padding: 15px 15px 15px; }
+
+  #hobbies {
+    background-position: right; }
+    #hobbies .contant_presentation {
+      line-height: 18px; }
+    #hobbies .list_hobbies .hobbie .fa {
+      font-size: 24px;
+      padding: 18px; }
+
+  #contact form input, #contact form select, #contact form button {
+    margin-top: 11px; }
+
+  footer {
+    padding-bottom: 50px; }
+
+  .slick-slider {
+    margin: 0 20px; } }
 
 /*# sourceMappingURL=style.css.map */

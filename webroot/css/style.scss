@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 $back-black: #292b2c;
 $back-color2: #50beb7;
 
@@ -13,6 +14,15 @@ ul{
   margin: auto;
   text-align: center;
 }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -71,29 +81,17 @@ footer{
 
 
 .title.border_center {
-  position: relative;
   text-align: center;
-  width: 70%;
   margin: auto;
-  &:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    top: 50%;
-    background-color: black;
-    z-index: -1;
-    left: 0;
-  }
+  font-family: 'Poppins', sans-serif;
   span{
-    position: relative;
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    background-color: white;
-    z-index: 10;
+    margin-bottom: 25px;
+    color: #b5b1b1;
+    font-size: 12px;
     text-align: center;
-    padding: 0 5%;
+    letter-spacing: .5em;
   }
 }
 
@@ -108,14 +106,37 @@ footer{
   }
 }
 
+.nav-top{
+  background-color: rgba(0, 0, 0, 0.33);
+  &.navbar-inverse .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+  }
+  &.navbar-inverse .navbar-nav .active>.nav-link,
+  &.navbar-inverse .navbar-nav .nav-link.active,
+  &.navbar-inverse .navbar-nav .nav-link.open,
+  &.navbar-inverse .navbar-nav .open>.nav-link {
+    color: rgb(165, 163, 159);
+  }
+  .nav-link{
+    color: rgb(255, 255, 255);
+  }
+}
+.nav-link{
+  color: rgb(165, 163, 159);
+  &.logo{
+    background-color: rgba(0, 0, 0, 0.48);
+    font-weight: bold;
+  }
+}
+
 .wrapper_container{
-  margin-top: 56px;  //height nav
   > section{
     margin-top: 40px;
   }
 }
 
 .banner{
+  padding-top: 56px;  //height nav
   overflow: hidden;
   min-height: 600px;
   background-position: center;
@@ -123,15 +144,22 @@ footer{
   background-repeat: no-repeat;
   background-image: url("../img/banner.jpg");
   .title{
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin: 150px;
-    background-color: rgba(255,255,255,0.7);
+    margin: 150px 150px 300px 150px;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 25px 40px;
-    color: black;
+    color: #040404;
     -webkit-box-shadow: 1.5px 2.598px 6px 0 rgb( 212, 215, 223 );
     box-shadow: 1.5px 2.598px 6px 0 rgb(66, 66, 66);
     -webkit-transition-duration: .4s;
     transition-duration: .4s;
+    .btn{
+      margin-top: 40px;
+      border: 1px solid;
+      padding: .5rem 2.5rem;
+      border-radius: 0;
+    }
     .top_title{
       text-transform: uppercase;
     }
@@ -145,10 +173,13 @@ footer{
 #skills{
   margin-top: -140px;
   > .title{
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    border-bottom: 1px solid white;
-    margin-bottom: 15px;
-    color: white;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .5em;
   }
   .view_project{
     position: absolute;
@@ -212,6 +243,7 @@ footer{
       background-color: $back-black;
       padding: 25px 32px;
       .title{
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         text-transform: uppercase;
         font-size: 18px;
@@ -241,6 +273,7 @@ footer{
     }
     > .col-md-6 .container_content{
       background-color: $back-color2;
+      height: 100%;
 
     }
     > .col-md-6:first-child{
@@ -255,9 +288,11 @@ footer{
 #xp{
   padding: 40px 0px;
   .title{
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 10px;
+    letter-spacing: .4em;
   }
   .list_xp{
     li{
@@ -276,7 +311,12 @@ footer{
       margin: auto;
       max-height: 100px;
       max-width: 80%;
-
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      &:hover{
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+      }
     }
   }
   .content_more{
@@ -306,7 +346,7 @@ footer{
 }
 
 #hobbies{
-  background-image: url("../img/wall_perso.jpg");
+  background: url(../img/wall_perso.jpg) center 0 no-repeat fixed;
   background-position: center;
   background-size: cover;
   color: white;
@@ -314,11 +354,13 @@ footer{
   margin-top: 0px;
 
   .title{
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    border-bottom: 1px solid white;
-    margin-bottom: 35px;
-    color: white;
-    position: relative;
+    margin-bottom: 70px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .4em;
     a{
       position: absolute;
       top: 0;
@@ -328,6 +370,25 @@ footer{
       font-size: inherit;
     }
   }
+
+  .contant_presentation{
+    padding-left: 50px;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      display: block;
+      height: 5px;
+      width: 27px;
+      top: 13px;
+      left: 0px;
+      background-color: white;
+    }
+  }
+  .citation{
+    margin-top: 40px;
+  }
+
   .list_hobbies{
     margin-top: 35px;
     text-align: center;
@@ -338,20 +399,13 @@ footer{
       cursor: pointer;
       font-size: 35px;
       display: inline-block;
-      margin-bottom: 10px;
       padding: 20px;
-      background-color: #292b2c;
-      border-radius: 50%;
-      -webkit-box-shadow: 1.5px 2.598px 6px 0 rgb( 212, 215, 223 );
-      box-shadow: 1.5px 2.598px 6px 0 rgb(66, 66, 66);
-      border-radius: 50%;
-      -webkit-transition-duration: .4s;
-      transition-duration: .4s;
+
     }
   }
 
   .wrapper_hobbies{
-    margin-top: 35px;
+    margin-top: 50px;
     .sub_title{
       text-transform: uppercase;
 
@@ -381,11 +435,31 @@ footer{
 #contact{
   background-color: $back-color2;
   padding: 40px 0px;
+  border-top: 6px solid #292b2c;
   .title{
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    border-bottom: 1px solid white;
     margin-bottom: 25px;
-    color: white;
+    color: #292b2c;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: .4em;
+  }
+  .content{
+    color: #515556 !important;
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+    line-height: 25px;
+
+    .up{
+      color: white;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: initial;
+    }
   }
   form{
     textarea{
@@ -423,7 +497,7 @@ footer{
 
 #feed{
  .wrapper_feed{
-   margin-top: 40px;
+   margin-top: 70px;
    position: relative;
    .list_cat_feed{
     position: absolute;
@@ -476,7 +550,10 @@ footer{
        padding-bottom: 45px;
         font-size: 14px;
        line-height: 16px;
+       overflow: hidden;
      }
    }
  }
 }
+
+@import "style_780";

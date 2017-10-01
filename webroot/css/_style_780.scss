@@ -1,0 +1,71 @@
+@media screen and (max-width: 780px) {
+  .banner {
+    min-height: 390px;
+    .title {
+      margin: 5%;
+      .top_title {
+        font-size: 36px;
+      }
+      .sub_title {
+        text-transform: lowercase;
+        font-size: 22px;
+      }
+    }
+  }
+
+  #skills > .title,#hobbies .title,#xp .title,.title.border_center,#contact .title {
+    font-size: 25px;
+  }
+
+
+  #skills .wrapper_skill > .col-md-6:first-child,#skills .wrapper_skill > .col-md-6:last-child{
+    padding:{
+      right: 0px;
+      left: 2px;
+    }
+  }
+  #skills .wrapper_skill > .col-md-6:first-child {
+    margin-bottom: 20px;
+  }
+
+  #skills .wrapper_skill .container_gif {
+    height: 150px;
+    &:after ,&:before{
+      content: none;
+    }
+  }
+  #skills .wrapper_skill .container_content {
+    padding: 15px 15px 50px;
+    .desc {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  #skills .wrapper_skill > .col-md-6 .container_content{
+    padding: 15px 15px 15px;
+  }
+
+  #hobbies {
+    background-position: right;
+    .contant_presentation{
+      line-height: 18px;
+    }
+    .list_hobbies .hobbie .fa {
+      font-size: 24px;
+      padding: 18px;
+    }
+  }
+
+  #contact form input, #contact form select, #contact form button {
+    margin-top: 11px;
+  }
+
+  footer {
+    padding-bottom: 50px;
+  }
+
+  .slick-slider {
+    margin: 0 20px;
+  }
+
+}

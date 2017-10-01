@@ -6,15 +6,30 @@
 $('ul.list_hobbies').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
-    prevArrow:"<i class='fa fa-chevron-left' aria-hidden='true'></i>",
-    nextArrow:"<li class='fa fa-chevron-right' aria-hidden='true'></i>"
+    prevArrow:"",
+    nextArrow:"",
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
+
+$('.banner').parallax("center", .2, 0.1, true);
+
 
 $.ajax({
     type: "POST",
     url: "/Catskills/show_list",
     success: function(response) {
         $('#skills .wrapper_skills').html(response)
+        $('.wrapper_skill.md-size').equalize();
     }
 });
 
@@ -91,6 +106,17 @@ $(document).on('click','#xp .close',function(){
     $('#xp .content_more').html("");
 });
 
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    if(scroll < 10){
+        $('nav').addClass('nav-top')
+        $('nav').removeClass('bg-inverse')
+    }else{
+        $('nav').removeClass('nav-top')
+        $('nav').addClass('bg-inverse')
+    }
+});
+
 $.ajax({
     type: "POST",
     url: "/Societes/show_list",
@@ -99,8 +125,19 @@ $.ajax({
             $('ul.list_xp').slick({
                 slidesToShow: 4,
                 slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
                 prevArrow:"<i class='fa fa-chevron-left' aria-hidden='true'></i>",
-                nextArrow:"<li class='fa fa-chevron-right' aria-hidden='true'></i>"
+                nextArrow:"<li class='fa fa-chevron-right' aria-hidden='true'></i>",
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         });
     }

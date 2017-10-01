@@ -33,6 +33,7 @@ class SkillsController extends AppController
          *  -> link project
          */
 
+        echo "<hr>";
         die('ok');
 
     }
