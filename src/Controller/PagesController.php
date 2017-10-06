@@ -41,6 +41,9 @@ class PagesController extends AppController
 
     public function home(){
         $this->viewBuilder()->setLayout('l_home');
+
+        $this->set('title', 'Thomas sire - développeur web et mobile');
+
     }
 
     public function display(...$path)

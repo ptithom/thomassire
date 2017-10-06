@@ -17,7 +17,7 @@
                         <?php if(!empty($cat_skill["skills"] )): ?>
                             <ul class="list_picto">
                                 <?php foreach($cat_skill["skills"] as  $skill ): ?>
-                                <li><?= $skill["name"] ?></li>
+                                <li data-toggle="popover" placement="bottom" data-content="<?= $skill["description"] ?>"><?= $skill["name"] ?></li>
                                 <?php endforeach; ?>
                             </ul>
                         <?php endif; ?>
@@ -42,7 +42,7 @@
                         <?php if(!empty($cat_skill["skills"] )): ?>
                             <ul class="list_picto">
                                 <?php foreach($cat_skill["skills"] as  $skill ): ?>
-                                    <li><?= $skill["name"] ?></li>
+                                    <li data-toggle="popover" placement="bottom" data-content="<?= $skill["description"] ?>"><?= $skill["name"] ?></li>
                                 <?php endforeach; ?>
                             </ul>
                         <?php endif; ?>
@@ -60,7 +60,7 @@
                         <?php if(!empty($cat_skill["skills"] )): ?>
                             <ul class="list_picto">
                                 <?php foreach($cat_skill["skills"] as  $skill ): ?>
-                                    <li><?= $skill["name"] ?></li>
+                                    <li data-toggle="popover" placement="bottom" data-content="<?= $skill["description"] ?>" ><?= $skill["name"] ?></li>
                                 <?php endforeach; ?>
                             </ul>
                         <?php endif; ?>

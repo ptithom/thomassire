@@ -28,7 +28,8 @@ $.ajax({
     type: "POST",
     url: "/Catskills/show_list",
     success: function(response) {
-        $('#skills .wrapper_skills').html(response)
+        $('#skills .wrapper_skills').html(response);
+        $('[data-toggle="popover"]').popover({trigger: "click", placement: "bottom"});
         $('.wrapper_skill.md-size').equalize();
     }
 });
@@ -62,7 +63,7 @@ $(document).on('click','.view_project',function(){
 
     $.ajax({
         type: "POST",
-        url: "/Skills/list_project",
+        url: "/Projects/list_project",
         data: "id_skill="+id_skill,
         beforeSend: function() {
             $('#skills .content_more').hide();

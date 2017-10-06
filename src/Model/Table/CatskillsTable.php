@@ -11,6 +11,7 @@ class CatskillsTable extends Table
     public function initialize(array $config)
     {
         $this->hasMany('Skills');
+        $this->belongsToMany('SkillsProjects');
     }
 
 }
