@@ -18,6 +18,7 @@ use Cake\Core\Configure;
 use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
+use Cake\Network\Email\Email;
 
 /**
  * Static content controller
@@ -76,6 +77,17 @@ class PagesController extends AppController
     }
 
     public function contact(){
+
+        $msg = 'test';
+
+        $this->set('mail', $msg);
+
+        $email = new Email('default');
+        $email->from(['t.sire41@gmail.com' => 'Thomas Sire'])
+            ->to('t.sire41@gmail.com')
+            ->emailFormat('html')
+            ->subject('Contact Portfolio')
+            ->send($msg);
 
 
         echo json_encode(["error" => 0 , "message" => "Merci, votre email a bien était envoyer."]);
