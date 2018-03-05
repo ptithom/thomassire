@@ -142,7 +142,8 @@ footer {
       text-transform: uppercase;
       font-weight: 200;
       font-size: 13px;
-      cursor: pointer; }
+      cursor: pointer;
+      color: black; }
     .banner .title .top_title {
       text-transform: uppercase;
       letter-spacing: 6.8px; }
