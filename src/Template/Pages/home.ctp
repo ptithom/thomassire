@@ -30,7 +30,7 @@
 
     <div class="wrapper_feed">
         <ul class="list_cat_feed">
-            <li data-source="blog"><i class="fa fa-rss" aria-hidden="true"></i></li>
+            <!--<li data-source="blog"><i class="fa fa-rss" aria-hidden="true"></i></li>-->
             <li data-source="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
             <li data-source="info"><i class="fa fa-star" aria-hidden="true"></i></li>
             <li data-source="all" class="reset  active"><i class="fa fa-reply-all" aria-hidden="true"></i></li>

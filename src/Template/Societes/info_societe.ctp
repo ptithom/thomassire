@@ -8,7 +8,6 @@
 
     <div class="col-md-8">
         <div class="container_content">
-            <h3 class="title"><?= $societe['name'] ?></h3>
             <p class="desc">
                 <?= $societe['description'] ?>
             </p>

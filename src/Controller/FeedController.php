@@ -30,13 +30,14 @@ class FeedController extends AppController
 
         if(!empty($this->request->data['source']) && $this->request->data['source'] != 'all' ){
             if($this->request->data['source'] == "blog")
-                $posts = $this->getblogpost(15);
+                //$posts = $this->getblogpost(15);
             else if($this->request->data['source'] == "twitter")
                 $posts = $this->gettweeterpost(15);
             else if($this->request->data['source'] == "info")
                 $posts = $this->getinternalpost(15);
         }else{
-            $posts = $this->getblogpost(5);
+            //$posts = $this->getblogpost(5);
+            $posts = [];
             $this->array_insert($posts,2,$this->gettweeterpost(5));
             $this->array_insert($posts,count($posts),$this->getinternalpost(5));
         }
