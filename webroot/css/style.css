@@ -138,6 +138,7 @@ footer {
       color: #50beb7; }
 
 .nav-link {
+  display: inline-block;
   color: #a5a39f; }
   .nav-link.logo {
     background-color: rgba(0, 0, 0, 0.48);

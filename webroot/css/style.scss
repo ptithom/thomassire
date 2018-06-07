@@ -165,6 +165,7 @@ footer{
   }
 }
 .nav-link{
+  display: inline-block;
   color: rgb(165, 163, 159);
   &.logo{
     background-color: rgba(0, 0, 0, 0.48);
