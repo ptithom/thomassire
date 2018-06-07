@@ -58,8 +58,8 @@
                data-toggle="popover" placement="bottom" data-content="La musique" ></i>
         </li>
         <li class="hobbie">
-            <i class="fa fa-gamepad" aria-hidden="true"
-               data-toggle="popover" placement="bottom" data-content="Les jeux de société" ></i>
+            <i class="fa fa-utensils" aria-hidden="true"
+               data-toggle="popover" placement="bottom" data-content="asian food addict" ></i>
         </li>
         <li class="hobbie">
             <i class="fa fa-pagelines" aria-hidden="true"
