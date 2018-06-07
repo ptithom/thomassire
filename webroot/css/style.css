@@ -355,6 +355,26 @@ footer {
       display: inline-block;
       width: auto;
       font-size: inherit; }
+    #hobbies .title.sub {
+      margin-bottom: 30px;
+      margin-top: 50px;
+      text-align: left;
+      padding-left: 50px;
+      position: relative; }
+      #hobbies .title.sub:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 60px;
+        bottom: -10px;
+        left: 0px;
+        background-color: white; }
+  #hobbies .small-3 {
+    font-size: 12px;
+    margin-top: 21px;
+    font-style: italic;
+    font-weight: 100; }
   #hobbies .contant_presentation {
     padding-left: 50px;
     position: relative; }
@@ -370,7 +390,6 @@ footer {
   #hobbies .citation {
     margin-top: 40px; }
   #hobbies .list_hobbies {
-    margin-top: 35px;
     text-align: center;
     font-size: 14px;
     font-weight: 200;
@@ -381,7 +400,7 @@ footer {
       display: inline-block;
       padding: 20px; }
   #hobbies .wrapper_hobbies {
-    margin-top: 50px; }
+    margin-top: 0px; }
     #hobbies .wrapper_hobbies .sub_title {
       text-transform: uppercase; }
   #hobbies .btn_cv {

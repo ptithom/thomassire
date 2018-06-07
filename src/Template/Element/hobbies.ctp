@@ -27,6 +27,15 @@
 </div>
 
 <div class="wrapper_hobbies">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="sub title">
+                Personnalité et Passions
+            </div>
+        </div>
+    </div>
+
     <ul class="list_hobbies">
         <li class="hobbie">
             <i class="fa fa-youtube-play" aria-hidden="true"
@@ -62,5 +71,34 @@
         </li>
 
     </ul>
-<div>
+</div>
+<div class="row wrapper_projetperso">
+    <div class="col-12">
+        <div class="sub title">
+            Mes projets Perso
+        </div>
+    </div>
+    <div class="col-12 col-md-4 text-center">
+        < <a href="http://rackhamtheraid.fr" target="_blank" class="text-center text-uppercase">
+            Rackham the raid
+        </a> >
+        <p class="small-3">
+            Association crée pour participer a un raid en Europe (EUROP'RAID) qui a pour objectif de collecter et acheminer des fournitures scolaire aux écoles en difficultés dans les pays d'Europe de l'est.
+        </p>
+    </div>
+    <div class="col-12 col-md-4 text-center">
+        < <a href="https://objectifpixel.com/" target="_blank" class="text-center text-uppercase">
+           Objectif-pixel
+        </a> >
+        <p class="small-3">
+            Pationné de photo depuis longtemps, ce portfolio ma suivie depuis mes première ligne de codes et a été mon premier site mise en ligne. Il a biensur connue de nombreuse ravalement de facade avec les années (hereusement).
+        </p>
+    </div>
+    <div class="col-12 col-md-4 text-center">
+        < <a href="https://photomaniax.ovh/" target="_blank" class="text-center text-uppercase">
+            Photomaniax
+        </a> >
+        <p class="small-3">Projet commencer en debut 2018 qui a pour objectif de regrouper des photographes et de ce challenger a produire des series de photos avec des thématiques/contraintes imposer par mois</p>
+    </div>
+</div>
 

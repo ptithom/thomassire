@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b167621a-c92d-4173-b55a-cfae5bd3d8ed" name="Default" comment="push merge">
+    <list default="true" id="b167621a-c92d-4173-b55a-cfae5bd3d8ed" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/debug_kit.sqlite" afterPath="$PROJECT_DIR$/tmp/debug_kit.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/banner_home.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/banner_home.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/_style_780.scss" afterPath="$PROJECT_DIR$/webroot/css/_style_780.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/hobbies.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/hobbies.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/style.css" afterPath="$PROJECT_DIR$/webroot/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/style.css.map" afterPath="$PROJECT_DIR$/webroot/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/style.scss" afterPath="$PROJECT_DIR$/webroot/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/js/home.js" afterPath="$PROJECT_DIR$/webroot/js/home.js" />
     </list>
     <ignored path="thomassire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,8 +52,8 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.2941175">
-              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="138" selection-end-column="1" />
+            <state vertical-scroll-proportion="-5.882353">
+              <caret line="467" column="16" selection-start-line="467" selection-start-column="16" selection-end-line="467" selection-end-column="16" />
               <folding>
                 <element signature="e#421#449#0" expanded="false" />
                 <element signature="e#453#476#0" expanded="false" />
@@ -64,11 +62,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_style_780.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_style_780.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/css/_style_780.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2663707">
+            <state vertical-scroll-proportion="-4.7058825">
               <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hobbies.ctp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Template/Element/hobbies.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7898707">
+              <caret line="97" column="43" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -129,7 +137,6 @@
         <option value="$PROJECT_DIR$/vendor/SimplePie.php" />
         <option value="$PROJECT_DIR$/src/Template/Feed/index.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Element/header.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Element/hobbies.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Layout/l_home.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/SkillsController.php" />
         <option value="$PROJECT_DIR$/src/Template/Societes/info_societe.ctp" />
@@ -138,8 +145,9 @@
         <option value="$PROJECT_DIR$/src/Controller/PagesController.php" />
         <option value="$PROJECT_DIR$/webroot/js/home.js" />
         <option value="$PROJECT_DIR$/src/Template/Element/banner_home.ctp" />
-        <option value="$PROJECT_DIR$/webroot/css/style.scss" />
         <option value="$PROJECT_DIR$/webroot/css/_style_780.scss" />
+        <option value="$PROJECT_DIR$/webroot/css/style.scss" />
+        <option value="$PROJECT_DIR$/src/Template/Element/hobbies.ctp" />
       </list>
     </option>
   </component>
@@ -504,7 +512,13 @@
       <option name="project" value="LOCAL" />
       <updated>1520256551344</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="height 100% + style header + nav">
+      <created>1528331303538</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1528331303538</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -523,6 +537,7 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22588523" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63975906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -532,7 +547,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -564,7 +578,8 @@
     <MESSAGE value="push merge" />
     <MESSAGE value="link btn banner" />
     <MESSAGE value="mail" />
-    <option name="LAST_COMMIT_MESSAGE" value="mail" />
+    <MESSAGE value="height 100% + style header + nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="height 100% + style header + nav" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -603,10 +618,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/css/_style_780.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7058825">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webroot/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.2941175">
-          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="138" selection-end-column="1" />
+        <state vertical-scroll-proportion="-5.882353">
+          <caret line="467" column="16" selection-start-line="467" selection-start-column="16" selection-end-line="467" selection-end-column="16" />
           <folding>
             <element signature="e#421#449#0" expanded="false" />
             <element signature="e#453#476#0" expanded="false" />
@@ -614,10 +637,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/css/_style_780.scss">
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/hobbies.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2663707">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.7898707">
+          <caret line="97" column="43" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
           <folding />
         </state>
       </provider>
