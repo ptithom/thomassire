@@ -127,7 +127,8 @@ footer {
     color: #a5a39f; }
   .nav-top .nav-link {
     color: white;
-    position: relative; }
+    position: relative;
+    display: inline-block; }
   .nav-top li + li {
     padding-left: 20px; }
     .nav-top li + li:before {

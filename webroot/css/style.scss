@@ -152,6 +152,7 @@ footer{
   .nav-link{
     color: rgb(255, 255, 255);
     position: relative;
+    display: inline-block;
   }
   li+li{
     padding-left: 20px;

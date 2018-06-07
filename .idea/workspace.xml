@@ -4,7 +4,8 @@
     <list default="true" id="b167621a-c92d-4173-b55a-cfae5bd3d8ed" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/debug_kit.sqlite" afterPath="$PROJECT_DIR$/tmp/debug_kit.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/hobbies.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/hobbies.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/footer.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/footer.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/header.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/header.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/style.css" afterPath="$PROJECT_DIR$/webroot/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/style.css.map" afterPath="$PROJECT_DIR$/webroot/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/style.scss" afterPath="$PROJECT_DIR$/webroot/css/style.scss" />
@@ -49,15 +50,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4162042">
-              <caret line="427" column="23" selection-start-line="427" selection-start-column="23" selection-end-line="427" selection-end-column="23" />
+            <state vertical-scroll-proportion="-9.117647">
+              <caret line="153" column="23" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
               <folding>
                 <element signature="e#421#449#0" expanded="false" />
                 <element signature="e#453#476#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.ctp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/Element/footer.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.25">
+              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.ctp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Template/Element/header.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4525862">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,7 +155,6 @@
         <option value="$PROJECT_DIR$/webroot/css/style.css.map" />
         <option value="$PROJECT_DIR$/webroot/css/style.sass" />
         <option value="$PROJECT_DIR$/src/Template/Element/skills.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Element/footer.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Societes/show_list.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/SocietesController.php" />
         <option value="$PROJECT_DIR$/src/Model/Table/Skills.php" />
@@ -146,7 +166,6 @@
         <option value="$PROJECT_DIR$/lib/SimplePie.php" />
         <option value="$PROJECT_DIR$/vendor/SimplePie.php" />
         <option value="$PROJECT_DIR$/src/Template/Feed/index.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Element/header.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Layout/l_home.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/SkillsController.php" />
         <option value="$PROJECT_DIR$/src/Template/Societes/info_societe.ctp" />
@@ -157,7 +176,9 @@
         <option value="$PROJECT_DIR$/webroot/css/_style_780.scss" />
         <option value="$PROJECT_DIR$/src/Template/Pages/home.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Element/hobbies.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Element/footer.ctp" />
         <option value="$PROJECT_DIR$/webroot/css/style.scss" />
+        <option value="$PROJECT_DIR$/src/Template/Element/header.ctp" />
       </list>
     </option>
   </component>
@@ -335,6 +356,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thomassire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thomassire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -540,7 +583,13 @@
       <option name="project" value="LOCAL" />
       <updated>1528334344663</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="projet perso">
+      <created>1528335493072</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1528335493072</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -665,14 +714,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/footer.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webroot/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4162042">
-          <caret line="427" column="23" selection-start-line="427" selection-start-column="23" selection-end-line="427" selection-end-column="23" />
+        <state vertical-scroll-proportion="-9.117647">
+          <caret line="153" column="23" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
           <folding>
             <element signature="e#421#449#0" expanded="false" />
             <element signature="e#453#476#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/header.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4525862">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

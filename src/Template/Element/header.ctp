@@ -30,6 +30,9 @@
             <a href="https://drive.google.com/open?id=0ByEW5T63CJzPWHp2eXNScWo0cWc" target="_blank" class="nav-link">
                 <i class="fa fa-address-card-o" aria-hidden="true"></i>
             </a>
+            <a href="https://github.com/ptithom" target="_blank" class="nav-link">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
 </nav>
