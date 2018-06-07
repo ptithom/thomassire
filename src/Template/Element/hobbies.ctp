@@ -79,26 +79,36 @@
         </div>
     </div>
     <div class="col-12 col-md-4 text-center">
-        < <a href="http://rackhamtheraid.fr" target="_blank" class="text-center text-uppercase">
-            Rackham the raid
-        </a> >
-        <p class="small-3">
-            Association crée pour participer a un raid en Europe (EUROP'RAID) qui a pour objectif de collecter et acheminer des fournitures scolaire aux écoles en difficultés dans les pays d'Europe de l'est.
-        </p>
+        <div class="wrapper-fiche-projet">
+            - <h3><a href="http://rackhamtheraid.fr" target="_blank" class="title_projet text-center text-uppercase">
+                    Rackham the raid
+                </a></h3> -
+            <p class="small-3">
+                Association crée pour participer a un raid en Europe (EUROP'RAID) qui a pour objectif de collecter et acheminer des fournitures scolaire aux écoles en difficultés dans les pays d'Europe de l'est.
+            </p>
+        </div>
+
     </div>
     <div class="col-12 col-md-4 text-center">
-        < <a href="https://objectifpixel.com/" target="_blank" class="text-center text-uppercase">
-           Objectif-pixel
-        </a> >
-        <p class="small-3">
-            Pationné de photo depuis longtemps, ce portfolio ma suivie depuis mes première ligne de codes et a été mon premier site mise en ligne. Il a biensur connue de nombreuse ravalement de facade avec les années (hereusement).
-        </p>
+        <div class="wrapper-fiche-projet">
+            - <h3><a href="https://objectifpixel.com/" target="_blank" class=" title_projet text-center text-uppercase">
+                    Objectif-pixel
+                </a></h3> -
+            <p class="small-3">
+                Pationné de photo depuis longtemps, ce portfolio ma suivie depuis mes première ligne de codes et a été mon premier site mise en ligne. Il a connue de nombreuse ravalement de facade avec les années .
+            </p>
+        </div>
+
     </div>
     <div class="col-12 col-md-4 text-center">
-        < <a href="https://photomaniax.ovh/" target="_blank" class="text-center text-uppercase">
-            Photomaniax
-        </a> >
-        <p class="small-3">Projet commencer en debut 2018 qui a pour objectif de regrouper des photographes et de ce challenger a produire des series de photos avec des thématiques/contraintes imposer par mois</p>
+        <div  class="wrapper-fiche-projet" >
+            - <h3><a href="https://photomaniax.ovh/" target="_blank" class=" title_projet text-center text-uppercase">
+                    Photomaniax
+                </a></h3> -
+            <p class="small-3">Projet commencer en debut 2018 qui a pour objectif de regrouper des photographes et de ce challenger a produire des series de photos avec des thématiques/contraintes imposer par mois
+            </p>
+        </div>
+
     </div>
 </div>
 

@@ -359,7 +359,6 @@ footer {
       margin-bottom: 30px;
       margin-top: 50px;
       text-align: left;
-      padding-left: 50px;
       position: relative; }
       #hobbies .title.sub:before {
         content: "";
@@ -372,9 +371,19 @@ footer {
         background-color: white; }
   #hobbies .small-3 {
     font-size: 12px;
-    margin-top: 21px;
     font-style: italic;
-    font-weight: 100; }
+    font-weight: 100;
+    margin-top: 12px; }
+  #hobbies .wrapper-fiche-projet {
+    padding: 15px;
+    background-color: #50beb7fc;
+    height: 100%;
+    box-shadow: 1.5px 2.598px 6px 0 #424242; }
+  #hobbies .title_projet {
+    margin-bottom: 21px;
+    font-size: 17px; }
+    #hobbies .title_projet:hover {
+      color: white; }
   #hobbies .contant_presentation {
     padding-left: 50px;
     position: relative; }
