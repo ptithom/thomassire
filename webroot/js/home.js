@@ -3,6 +3,25 @@
  */
 
 
+function up_full_height(){
+    if($(".full-height").length){
+        $('html').css('height','100%');
+        $('body').css('height','100%');
+        var h = window.innerHeight;
+        var hHeader = $('header').innerHeight();
+        var sectionFullHeight = h - (hHeader);
+
+        $(".full-height").css('height',sectionFullHeight+'px');
+    }
+}
+
+up_full_height();
+
+$( window ).resize(function() {
+    up_full_height()
+});
+
+
 $('ul.list_hobbies').slick({
     slidesToShow: 6,
     slidesToScroll: 1,

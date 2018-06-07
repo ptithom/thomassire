@@ -13,6 +13,20 @@
     }
   }
 
+  .nav-link.logo{
+    display: none;
+  }
+
+  .navbar-nav{
+    li+li{
+      padding-left: 0px;
+      &:before{
+        content: none;
+      }
+    }
+  }
+
+
   #skills > .title,#hobbies .title,#xp .title,.title.border_center,#contact .title {
     font-size: 25px;
   }

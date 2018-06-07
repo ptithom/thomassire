@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+body {
+  font: 300 15px 'Montserrat', Helvetica, Arial, sans-serif; }
+  body b, body strong {
+    font-weight: bold; }
+  body a {
+    color: white; }
+
 ul {
   padding: 0;
   list-style: none; }
@@ -97,6 +105,20 @@ footer {
   .slick-arrow.fa-chevron-left {
     left: -20px; }
 
+.navbar-nav li {
+  position: relative; }
+.navbar-nav li + li {
+  padding-left: 25px; }
+  .navbar-nav li + li:before {
+    position: absolute;
+    left: 0;
+    content: ".";
+    color: #50beb7;
+    font-weight: bold;
+    padding: .5em;
+    font-size: 22px;
+    line-height: 10px; }
+
 .nav-top {
   background-color: rgba(0, 0, 0, 0.33); }
   .nav-top.navbar-inverse .navbar-nav .nav-link {
@@ -104,7 +126,15 @@ footer {
   .nav-top.navbar-inverse .navbar-nav .active > .nav-link, .nav-top.navbar-inverse .navbar-nav .nav-link.active, .nav-top.navbar-inverse .navbar-nav .nav-link.open, .nav-top.navbar-inverse .navbar-nav .open > .nav-link {
     color: #a5a39f; }
   .nav-top .nav-link {
-    color: white; }
+    color: white;
+    position: relative; }
+  .nav-top li + li {
+    padding-left: 20px; }
+    .nav-top li + li:before {
+      position: absolute;
+      left: 0;
+      content: ".";
+      color: #50beb7; }
 
 .nav-link {
   color: #a5a39f; }
@@ -127,8 +157,8 @@ footer {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 150px 150px 300px 150px;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 25px 40px;
+    background-color: rgba(255, 255, 255, 0.72);
+    padding: 50px 40px;
     color: #040404;
     -webkit-box-shadow: 1.5px 2.598px 6px 0 #d4d7df;
     box-shadow: 1.5px 2.598px 6px 0 #424242;
@@ -149,7 +179,7 @@ footer {
       letter-spacing: 6.8px; }
     .banner .title .sub_title {
       text-transform: lowercase;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 200; }
 
 #skills {
@@ -230,7 +260,7 @@ footer {
         margin-bottom: 10px;
         position: relative; }
       #skills .wrapper_skill .container_content .desc {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 18px;
         margin-bottom: 20px;
         font-weight: 100; }
@@ -480,6 +510,14 @@ footer {
       .banner .title .sub_title {
         text-transform: lowercase;
         font-size: 22px; }
+
+  .nav-link.logo {
+    display: none; }
+
+  .navbar-nav li + li {
+    padding-left: 0px; }
+    .navbar-nav li + li:before {
+      content: none; }
 
   #skills > .title, #hobbies .title, #xp .title, .title.border_center, #contact .title {
     font-size: 25px; }
