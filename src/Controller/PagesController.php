@@ -85,6 +85,8 @@ class PagesController extends AppController
             $msg = $data['msg'];
         }
 
+        var_dump($data);
+
         if(!empty($data['name'])){
             $msg += "<br> ".$data['name']  ;
         }
