@@ -46,7 +46,7 @@ class ProjectsController extends AppController
 
         debug($projects);
 
-        die('ok');
+        die('En constrction !');
 
     }
 

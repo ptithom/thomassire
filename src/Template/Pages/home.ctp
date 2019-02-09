@@ -42,10 +42,10 @@
 
 <section id="contact" >
     <div class="container clearfix">
-        <h2 class="title">Contacte</h2>
+        <h2 class="title">Contact</h2>
         <div class="content">
             <p class="up">Pour tout demande et devis</p>
-            Je suis a l'écoute de toute proposition, je suis actuelement localiser dans les Pays de la loire plus précisément a Angers.
+            Je suis a l'écoute de toute proposition, je suis actuelement localisé dans les Pays de la loire plus précisément a Angers.
         </div>
         <div class="wrapper_contact">
             <div class="message hidden"></div>

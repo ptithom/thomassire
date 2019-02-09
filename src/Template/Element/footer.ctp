@@ -1,5 +1,5 @@
 <div class="reference">
-    Thomas SIRE © 2017
+    Thomas SIRE © 2019
 </div>
 <div class="text-center">
     <h2>Votre projet est ma passion.</h2>

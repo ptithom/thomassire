@@ -17,7 +17,7 @@
                 <a class="nav-link" href="#xp">Historique</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#hobbies">Moi</a>
+                <a class="nav-link" href="#hobbies">Présentation</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#feed">Feed</a>
