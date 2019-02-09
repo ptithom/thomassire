@@ -83,13 +83,11 @@ class PagesController extends AppController
         $data = $this->request->getData();
         if(!empty($data['msg'])){
             $msg = $data['msg'];
+            if(!empty($data['name'])){
+                $msg = $msg."<br/> ".$data['name']  ;
+            }
         }
 
-        var_dump($data);
-
-        if(!empty($data['name'])){
-            $msg += "<br> ".$data['name']  ;
-        }
 
         $this->set('mail', $msg);
 
