@@ -17,6 +17,8 @@ function up_full_height(){
 
 up_full_height();
 
+AOS.init();
+
 $( window ).resize(function() {
     up_full_height()
 });
@@ -216,6 +218,7 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera
-    document.documentElement.scrollTop = 0; // For IE and Firefox
+    $('html, body').animate({
+        scrollTop:$('html, body').offset().top
+    }, 'slow');
 }

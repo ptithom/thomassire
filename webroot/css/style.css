@@ -139,7 +139,7 @@ footer {
 
 .nav-link {
   display: inline-block;
-  color: #a5a39e; }
+  color: #a5a39f; }
   .nav-link.logo {
     background-color: rgba(0, 0, 0, 0.48);
     font-weight: bold; }
@@ -430,8 +430,7 @@ footer {
 
 #contact {
   background-color: #50beb7;
-  padding: 40px 0px;
-  border-top: 6px solid #292b2c; }
+  padding: 40px 0px; }
   #contact .title {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;

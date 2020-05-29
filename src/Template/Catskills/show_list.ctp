@@ -6,7 +6,7 @@
         <?php if($tmp_up){$tmp_up = false;continue;} ?>
 
         <?php if($cat_skill["col"] == "12"): ?>
-                <li class="row wrapper_skill lg-size" data-id_skill="<?= $cat_skill["id"] ?>">
+                <li class="row wrapper_skill lg-size" data-id_skill="<?= $cat_skill["id"] ?>" data-aos="fade-up">
                         <div class="col-md-3 container_gif"
                              style="background-image:url(<?= $cat_skill["path_media"] ?>)"></div>
                     <div class="col-md-9 container_content">
@@ -32,7 +32,7 @@
 
             <?php else: ?>
 
-            <li class="row wrapper_skill md-size">
+            <li class="row wrapper_skill md-size" data-aos="fade-up">
                 <div class="col-md-6">
                     <div class="container_content">
                         <h3 class="title"><?= $cat_skill["name"] ?></h3>

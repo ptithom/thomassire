@@ -5,15 +5,8 @@
     <div class="wrapper_skills"></div>
 </section>
 
-<section id="xp" >
-    <div class="container clearfix" >
-        <h2 class="title border_center"><span>Historique</span></h2>
-        <div class="wrapper_xp"></div>
-        <div class="content_more"></div>
-    </div>
-</section>
 
-<section id="hobbies">
+<section id="hobbies" >
     <div class="container clearfix" >
         <h2 class="title">
             <span>Présentation</span>
@@ -25,20 +18,29 @@
     </div>
 </section>
 
-<section id="feed" class="container clearfix">
-    <h2 class="title border_center"><span>Les actues fraiches</span></h2>
+    <section id="xp" data-aos="fade-up" >
+        <div class="container clearfix" >
+            <h2 class="title border_center"><span>Historique</span></h2>
+            <div class="wrapper_xp"></div>
+            <div class="content_more"></div>
+        </div>
+    </section>
 
-    <div class="wrapper_feed">
-        <ul class="list_cat_feed">
-            <!--<li data-source="blog"><i class="fa fa-rss" aria-hidden="true"></i></li>-->
-            <li data-source="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+
+    <!--<section id="feed" class="container clearfix">
+        <h2 class="title border_center"><span>Les actues fraiches</span></h2>
+
+        <div class="wrapper_feed">
+            <ul class="list_cat_feed">
+                <!--<li data-source="blog"><i class="fa fa-rss" aria-hidden="true"></i></li>-->
+            <!--<li data-source="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
             <li data-source="info"><i class="fa fa-star" aria-hidden="true"></i></li>
             <li data-source="all" class="reset  active"><i class="fa fa-reply-all" aria-hidden="true"></i></li>
         </ul>
         <div class="content_feed">
 
         </div>
-</section>
+</section>-->
 
 <section id="contact" >
     <div class="container clearfix">

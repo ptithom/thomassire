@@ -1,6 +1,6 @@
 
 <div class="banner full-height">
-    <h1 class="title">
+    <h1 class="title" data-aos="fade-up">
         <p class="top_title">Thomas Sire</p>
         <div class="sub_title"> - DEVELOPPEUR WEB ET MOBILE - </div>
 
