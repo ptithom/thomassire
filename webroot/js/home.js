@@ -3,6 +3,27 @@
  */
 
 
+function up_full_height(){
+    if($(".full-height").length){
+        $('html').css('height','100%');
+        $('body').css('height','100%');
+        var h = window.innerHeight;
+        var hHeader = $('header').innerHeight();
+        var sectionFullHeight = h - (hHeader);
+
+        $(".full-height").css('height',sectionFullHeight+'px');
+    }
+}
+
+up_full_height();
+
+AOS.init();
+
+$( window ).resize(function() {
+    up_full_height()
+});
+
+
 $('ul.list_hobbies').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -197,6 +218,7 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera
-    document.documentElement.scrollTop = 0; // For IE and Firefox
+    $('html, body').animate({
+        scrollTop:$('html, body').offset().top
+    }, 'slow');
 }

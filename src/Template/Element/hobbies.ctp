@@ -2,12 +2,12 @@
 
 <div class="row">
     <div class="col-md-8">
-        <div class="contant_presentation" >
+        <div class="contant_presentation" data-aos="fade-left">
             <p>
-                Développeur web, multi-tache, j'aime voir mes travaux être utilisés quotidiennement
-                et me donne les moyens pour que les utilisateurs puissent revenir
-                avec un bonne expérience d'utilisation.<br>
-                Persuadé que le web d'aujourd'hui doit pouvoir être adaptatif et intuitif.
+                Développeur web, curieux et touche a tout.
+                J'aime créer et peaufiner autant que possible l'UX et la sémantique de ce que je produis,
+                pour que les utilisateurs puissent revenir avec la meilleure expérience possible.<br>
+                Persuadé que "l'internet" d'aujourd'hui doit être portable, intuitif et percutant.
             </p>
 
             <!--<p>-->
@@ -27,40 +27,72 @@
 </div>
 
 <div class="wrapper_hobbies">
-    <ul class="list_hobbies">
-        <li class="hobbie">
-            <i class="fa fa-youtube-play" aria-hidden="true"
-               data-toggle="popover" placement="bottom" data-content="La curiosité" ></i>
-        </li>
-        <li class="hobbie">
-            <i class="fa fa-code" aria-hidden="true"
-               data-toggle="popover" placement="bottom" data-content="La creativité" ></i>
-        </li>
-        <li class="hobbie">
-            <i class="fa fa-share-alt" aria-hidden="true"
-               data-toggle="popover" placement="bottom" data-content="Le partage" ></i>
-        </li>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="sub title">
+                Personnalité et Passions
+            </div>
+        </div>
+    </div>
+
+    <!--<ul class="list_hobbies">
         <li class="hobbie">
             <i class="fa fa-camera-retro" aria-hidden="true"
                data-toggle="popover" placement="bottom" data-content="La photographie" ></i>
         </li>
         <li class="hobbie">
-            <i class="fa fa-music" aria-hidden="true"
-               data-toggle="popover" placement="bottom" data-content="La musique" ></i>
+            <i class="fa fa-utensils" aria-hidden="true"
+               data-toggle="popover" placement="bottom" data-content="Asian food addict" ></i>
         </li>
         <li class="hobbie">
-            <i class="fa fa-gamepad" aria-hidden="true"
-               data-toggle="popover" placement="bottom" data-content="Les jeux de société" ></i>
+            <i class="fa fa-pencil-ruler"
+               data-toggle="popover" placement="bottom" data-content="Bricolage" ></i>
         </li>
         <li class="hobbie">
-            <i class="fa fa-pagelines" aria-hidden="true"
-               data-toggle="popover" placement="bottom" data-content="L'étique" ></i>
-        </li>
-        <li class="hobbie">
-            <i class="fa fa-road" aria-hidden="true"
-               data-toggle="popover" placement="bottom" data-content="Le voyage" ></i>
+            <i class="fa fa-pagelines"
+               data-toggle="popover" placement="bottom" data-content="Plantes" ></i>
         </li>
 
-    </ul>
-<div>
+    </ul>-->
+</div>
+<div class="row wrapper_projetperso">
+    <div class="col-12">
+        <div class="sub title">
+            Mes projets Perso
+        </div>
+    </div>
+    <div class="col-12 col-md-4 text-center" data-aos="fade-up">
+        <div class="wrapper-fiche-projet">
+            - <h3><a href="http://rackhamtheraid.fr" target="_blank" class="title_projet text-center text-uppercase">
+                    Rackham the raid
+                </a></h3> -
+            <p class="small-3">
+                Association crée pour participer à un raid en Europe (EUROP'RAID) qui a pour objectif de collecter et acheminer des fournitures scolaires aux écoles en difficultés dans les pays d'Europe de l'est.
+            </p>
+        </div>
+
+    </div>
+    <div class="col-12 col-md-4 text-center" data-aos="fade-up">
+        <div class="wrapper-fiche-projet">
+            - <h3><a href="https://objectifpixel.com/" target="_blank" class=" title_projet text-center text-uppercase">
+                    Objectif-pixel
+                </a></h3> -
+            <p class="small-3">
+                Passionné de photo depuis longtemps, ce portfolio m'a suivie depuis mes premières lignes de codes et a été mon premier site mis en ligne. Il a connu de nombreuses ravalement de façade avec les années.
+            </p>
+        </div>
+
+    </div>
+    <div class="col-12 col-md-4 text-center" data-aos="fade-up">
+        <div  class="wrapper-fiche-projet" >
+            - <h3><a href="https://photomaniax.ovh/" target="_blank" class=" title_projet text-center text-uppercase">
+                    Photomaniax
+                </a></h3> -
+            <p class="small-3">Projet commencé en début 2018 qui a pour objectif de regrouper des photographes et de ce challenger à produire des series de photos avec des thématiques/contraintes imposer, chaque mois.
+            </p>
+        </div>
+
+    </div>
+</div>
 

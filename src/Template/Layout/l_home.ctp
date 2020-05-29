@@ -35,6 +35,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
           rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
             <link rel="stylesheet" type="text/css" href="/webroot/css/style.css" />
 
@@ -86,6 +87,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
 
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-equalizer@1.0.1/dist/jquery.equalizer.min.js"></script>
