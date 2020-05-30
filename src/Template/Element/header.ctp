@@ -13,11 +13,12 @@
             <li class="nav-item">
                 <a class="nav-link active" href="#skills">Aptitudes</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#xp">Historique</a>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="#hobbies">Présentation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#xp">Historique</a>
             </li>
 <!--            <li class="nav-item">
                 <a class="nav-link" href="#feed">Feed</a>

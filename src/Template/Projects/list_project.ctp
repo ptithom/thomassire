@@ -3,7 +3,7 @@
 
     <?php if($SkillCats_id == 1): ?>
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="project-skills">
                 <div class="wrapper_bg_image hover_zoom">
                     <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/komunitybooster.jpg')">
@@ -14,21 +14,18 @@
                     <div class="title">Komunity-booster</div>
                     <ul class="list_skill">
                         <li data-toggle="popover" placement="bottom" data-content="Pour creation de site/plate-forme sur mesure ">CakePhp 3</li>
-                        <li data-toggle="popover" placement="bottom" data-content="Creation d'application promotionnel liée  aux réseaux sociaux pour crée de l'engagement sur une marque. ">CMS de jeux pour réseaux sociaux</li>
+                        <li data-toggle="popover" placement="bottom" data-content="Creation d'application promotionnel liée  aux réseaux sociaux pour crée de l'engagement sur une marque. ">Jeux pour Facebook</li>
                         <li data-toggle="popover" placement="bottom" data-content="Création de back office spécifique aux projet de sociétés.
-Avec du traitement de donnée, mise en forme de statistique, création de moteur de templating complexe, programmation et publication automatisé sur diverse réseaux sociaux, mailing, création de scrypte pour de la récupération de donnée et bien d'autre...">Web application</li>
+Avec du traitement de donnée, mise en forme de statistique, création de moteur de templating complexe, programmation et publication automatisé sur diverse réseaux sociaux, mailing, création de scrypte pour de la récupération de donnée et bien d'autre...">Web Services</li>
                         <li>Gestion de projet</li>
-                        <li>WebServices</li>
                         <li>Sysadmin</li>
-                        <li>Tracking</li>
                         <li>optimisation de base de données</li>
-                        <li>Recommandations clients</li>
                         <li>Elaboration d'un CDC</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="project-skills">
                 <div class="wrapper_bg_image hover_zoom">
                     <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/woozbed.png')">
@@ -48,7 +45,7 @@ Avec du traitement de donnée, mise en forme de statistique, création de moteur
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="project-skills">
                 <div class="wrapper_bg_image hover_zoom">
                     <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/saulaie.png')">
@@ -56,10 +53,10 @@ Avec du traitement de donnée, mise en forme de statistique, création de moteur
                     </div>
                 </div>
                 <div class="wrapper-info-pojet">
-                    <div class="title">E-commerce d'aménagement d'intérieur</div>
+                    <div class="title">E-commerce d'intérieur</div>
                     <ul class="list_skill">
                         <li data-toggle="popover" placement="bottom" data-content="Création, maintenance, amélioration de site e-commerce ">Prestashop 1.6</li>
-                        <li>Maintenance et evolutions</li>
+                        <li>Maintenance</li>
                         <li>Module sur mesure</li>
                         <li>Gestion de projet</li>
                         <li>Optimisation de la navigation</li>
@@ -70,7 +67,7 @@ Avec du traitement de donnée, mise en forme de statistique, création de moteur
             </div>
         </div>
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="project-skills">
                 <div class="wrapper_bg_image hover_zoom">
                     <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/fairepartdefrance.png')">
@@ -81,22 +78,20 @@ Avec du traitement de donnée, mise en forme de statistique, création de moteur
                     <div class="title">Faire Part de France</div>
                     <ul class="list_skill">
                         <li data-toggle="popover" placement="bottom" data-content="Création, maintenance de site e-commerce ">Magento 1.7</li>
-                        <li>Optimisation de la vitesse</li>
-                        <li>Maintenance et evolutions</li>
+                        <li>Vitesse de chargement</li>
+                        <li>Maintenance</li>
                         <li>Module sur mesure</li>
                         <li>Gestion de projet</li>
-                        <li>Deplacement</li>
                         <li>Sysadmin</li>
                         <li>Tracking</li>
                         <li>Optimisation SEO</li>
-                        <li>Recommandations clients</li>
                         <li>BAT</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="project-skills">
                 <div class="wrapper_bg_image hover_zoom">
                     <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/tridan.png')">
@@ -120,7 +115,7 @@ Avec du traitement de donnée, mise en forme de statistique, création de moteur
 
     <?php elseif($SkillCats_id == 2): ?>
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="project-skills">
                 <div class="wrapper_bg_image hover_zoom">
                     <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/atelier-vie.png')">
@@ -144,7 +139,7 @@ Avec du traitement de donnée, mise en forme de statistique, création de moteur
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="project-skills">
                 <div class="wrapper_bg_image hover_zoom">
                     <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/bioparc.png')">
@@ -164,7 +159,7 @@ Avec du traitement de donnée, mise en forme de statistique, création de moteur
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="project-skills">
                 <div class="wrapper_bg_image hover_zoom">
                     <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/woozbed.png')">
@@ -186,7 +181,7 @@ Avec du traitement de donnée, mise en forme de statistique, création de moteur
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="project-skills">
                 <div class="wrapper_bg_image hover_zoom">
                     <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/tridan.png')">
@@ -208,7 +203,7 @@ Avec du traitement de donnée, mise en forme de statistique, création de moteur
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="project-skills">
                 <div class="wrapper_bg_image hover_zoom">
                     <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/iga.png')">
@@ -229,10 +224,10 @@ Avec du traitement de donnée, mise en forme de statistique, création de moteur
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="project-skills">
                 <div class="wrapper_bg_image hover_zoom">
-                    <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/komunitybooster.png')">
+                    <div class="background_image wrapper-fiche-projet" style="background-image: url('/webroot/img/ref/komunitybooster.jpg')">
 
                     </div>
                 </div>
