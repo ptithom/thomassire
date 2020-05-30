@@ -298,6 +298,7 @@ footer{
       background-color: $back-black;
       padding: 50px 100px;
       padding-left: 43px;
+      transition: all .5s;
       .title{
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
@@ -305,6 +306,8 @@ footer{
         font-size: 20px;
         margin-bottom: 30px;
         position: relative;
+        left: 0;
+        transition: all .5s;
       }
       .desc{
         font-size: 14px;
@@ -328,6 +331,13 @@ footer{
           margin: 0px 15px;
           cursor: pointer;
         }
+      }
+      &:hover{
+        .title{
+          transition: all .5s;
+          left: 30px;
+        }
+
       }
     }
     > .col-md-6 .container_content{
@@ -520,11 +530,18 @@ footer{
     font-style: italic;
     font-weight: 100;
     margin-top: 12px;
+    text-transform: initial;
+    &:hover{
+      text-decoration: none;
+    }
+
   }
+
 
   .wrapper-fiche-projet{
     padding: 15px;
-    background-color: $back-color2;
+    transition: all .5s;
+    background-color: #50beb7a6;
     height: 100%;
     box-shadow: 1.5px 2.598px 6px 0 #424242;
   }
@@ -594,6 +611,14 @@ footer{
   }
   .contant_presentation{
 
+  }
+  .link-projetperso{
+    &:hover:&focus{
+      text-decoration: none;
+      .wrapper-fiche-projet{
+        background-color: $back-color2;
+      }
+    }
   }
 }
 

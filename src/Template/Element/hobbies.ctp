@@ -64,35 +64,39 @@
         </div>
     </div>
     <div class="col-12 col-md-4 text-center" data-aos="fade-up">
+        <a href="http://rackhamtheraid.fr" target="_blank" class="link-projetperso">
         <div class="wrapper-fiche-projet">
-            - <h3><a href="http://rackhamtheraid.fr" target="_blank" class="title_projet text-center text-uppercase">
-                    Rackham the raid
-                </a></h3> -
+            - <h3 class=" title_projet text-center text-uppercase">Rackham the raid</h3> -
             <p class="small-3">
                 Association crée pour participer à un raid en Europe (EUROP'RAID) qui a pour objectif de collecter et acheminer des fournitures scolaires aux écoles en difficultés dans les pays d'Europe de l'est.
             </p>
         </div>
+        </a>
 
     </div>
     <div class="col-12 col-md-4 text-center" data-aos="fade-up">
+        <a href="https://objectifpixel.com/" target="_blank" class="link-projetperso">
         <div class="wrapper-fiche-projet">
-            - <h3><a href="https://objectifpixel.com/" target="_blank" class=" title_projet text-center text-uppercase">
+            - <h3 class=" title_projet text-center text-uppercase">
                     Objectif-pixel
-                </a></h3> -
+                </h3> -
             <p class="small-3">
                 Passionné de photo depuis longtemps, ce portfolio m'a suivie depuis mes premières lignes de codes et a été mon premier site mis en ligne. Il a connu de nombreuses ravalement de façade avec les années.
             </p>
         </div>
+        </a>
 
     </div>
     <div class="col-12 col-md-4 text-center" data-aos="fade-up">
+        <a href="https://photomaniax.ovh/" target="_blank" class="link-projetperso">
         <div  class="wrapper-fiche-projet" >
-            - <h3><a href="https://photomaniax.ovh/" target="_blank" class=" title_projet text-center text-uppercase">
+            - <h3 class=" title_projet text-center text-uppercase">
                     Photomaniax
-                </a></h3> -
+                </h3> -
             <p class="small-3">Projet commencé en début 2018 qui a pour objectif de regrouper des photographes et de ce challenger à produire des series de photos avec des thématiques/contraintes imposer, chaque mois.
             </p>
         </div>
+        </a>
 
     </div>
 </div>

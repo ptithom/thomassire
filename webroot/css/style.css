@@ -256,14 +256,16 @@ footer {
     #skills .wrapper_skill .container_content {
       background-color: #292b2c;
       padding: 50px 100px;
-      padding-left: 43px; }
+      padding-left: 43px;
+      transition: all .5s; }
       #skills .wrapper_skill .container_content .title {
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         text-transform: uppercase;
         font-size: 20px;
         margin-bottom: 30px;
-        position: relative; }
+        position: relative;
+        transition: all .5s; }
       #skills .wrapper_skill .container_content .desc {
         font-size: 14px;
         line-height: 18px;
@@ -283,6 +285,9 @@ footer {
           display: inline-block;
           margin: 0px 15px;
           cursor: pointer; }
+      #skills .wrapper_skill .container_content:hover .title {
+        transition: all .5s;
+        left: 30px; }
     #skills .wrapper_skill > .col-md-6 .container_content {
       background-color: #50beb7;
       height: 100%; }
@@ -438,10 +443,14 @@ footer {
     font-size: 12px;
     font-style: italic;
     font-weight: 100;
-    margin-top: 12px; }
+    margin-top: 12px;
+    text-transform: initial; }
+    #hobbies .small-3:hover {
+      text-decoration: none; }
   #hobbies .wrapper-fiche-projet {
     padding: 15px;
-    background-color: #50beb7;
+    transition: all .5s;
+    background-color: #50beb7a6;
     height: 100%;
     box-shadow: 1.5px 2.598px 6px 0 #424242; }
   #hobbies .title_projet {
@@ -490,6 +499,10 @@ footer {
     font-style: italic;
     font-size: 14px;
     width: 80%; }
+  #hobbies .link-projetperso:hover {
+    text-decoration: none; }
+    #hobbies .link-projetperso:hover .wrapper-fiche-projet {
+      background-color: #50beb7; }
 
 #contact {
   background-color: #50beb7;
