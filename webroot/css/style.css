@@ -149,7 +149,7 @@ footer {
 .wrapper_container > section {
   margin-top: 40px; }
 
-.banner {
+.banner, .load {
   padding-top: 56px;
   overflow: hidden;
   min-height: 600px;
@@ -157,7 +157,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/banner.jpg"); }
-  .banner .title {
+  .banner .title, .load .title {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 150px 150px 300px 150px;
@@ -168,7 +168,7 @@ footer {
     box-shadow: 1.5px 2.598px 6px 0 #424242;
     -webkit-transition-duration: .4s;
     transition-duration: .4s; }
-    .banner .title .btn {
+    .banner .title .btn, .load .title .btn {
       margin-top: 40px;
       padding: .7rem 3rem;
       border-radius: 0;
@@ -178,10 +178,10 @@ footer {
       font-size: 13px;
       cursor: pointer;
       color: black; }
-    .banner .title .top_title {
+    .banner .title .top_title, .load .title .top_title {
       text-transform: uppercase;
       letter-spacing: 6.8px; }
-    .banner .title .sub_title {
+    .banner .title .sub_title, .load .title .sub_title {
       text-transform: lowercase;
       font-size: 1.8rem;
       font-weight: 200; }
@@ -265,6 +265,7 @@ footer {
         font-size: 20px;
         margin-bottom: 30px;
         position: relative;
+        left: 0;
         transition: all .5s; }
       #skills .wrapper_skill .container_content .desc {
         font-size: 14px;
@@ -499,9 +500,9 @@ footer {
     font-style: italic;
     font-size: 14px;
     width: 80%; }
-  #hobbies .link-projetperso:hover {
+  #hobbies .link-projetperso:hover, #hobbies .link-projetperso:focus {
     text-decoration: none; }
-    #hobbies .link-projetperso:hover .wrapper-fiche-projet {
+    #hobbies .link-projetperso:hover .wrapper-fiche-projet, #hobbies .link-projetperso:focus .wrapper-fiche-projet {
       background-color: #50beb7; }
 
 #contact {
@@ -605,14 +606,27 @@ footer {
       overflow: hidden;
       font-weight: 200; }
 
+.load {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1000000;
+  top: 0;
+  padding: 0;
+  min-height: auto;
+  opacity: 1;
+  transition: all .5s; }
+  .load.loaded {
+    opacity: 0; }
+
 @media screen and (max-width: 780px) {
-  .banner {
+  .banner, .load {
     min-height: 390px; }
-    .banner .title {
+    .banner .title, .load .title {
       margin: 5%; }
-      .banner .title .top_title {
+      .banner .title .top_title, .load .title .top_title {
         font-size: 36px; }
-      .banner .title .sub_title {
+      .banner .title .sub_title, .load .title .sub_title {
         text-transform: lowercase;
         font-size: 22px; }
 

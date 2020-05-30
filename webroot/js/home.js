@@ -2,6 +2,9 @@
  * Created by ptithom on 27/07/2017.
  */
 
+/**
+ * FUNCTION
+ */
 
 function up_full_height(){
     if($(".full-height").length){
@@ -15,51 +18,128 @@ function up_full_height(){
     }
 }
 
-up_full_height();
 
-AOS.init();
+function showfeed(source){
+    $.ajax({
+        type: "POST",
+        url: "/feed",
+        data : 'source=' + source,
+        beforeSend: function() {
+            $('#feed .content_feed').html($('.wait').clone().removeClass('hidden'))
+        },
+        success: function(response) {
+            $('#feed .content_feed').html(response);
+            if($('#feed .list_cat_feed li.active').data('source') == 'all'){
+                $('#feed .list_cat_feed li.reset').hide('faste');
+            }else{
+                $('#feed .list_cat_feed li.reset').show('faste');
+            }
+        }
+    });
+}
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    $('html, body').animate({
+        scrollTop:$('html, body').offset().top
+    }, 'slow');
+}
+
+/**
+ * INIT
+ */
+
+$(document).ready(function(){
+
+    console.log('fds');
+
+    up_full_height();
+
+    $('ul.list_hobbies').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        prevArrow:"",
+        nextArrow:"",
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.banner').parallax("center", .2, 0.1, true);
+
+    AOS.init();
+
+
+    $.ajax({
+        type: "POST",
+        url: "/Catskills/show_list",
+        success: function(response) {
+            $('#skills .wrapper_skills').html(response);
+            $('[data-toggle="popover"]').popover({trigger: "click", placement: "bottom"});
+            $('.wrapper_skill.md-size').equalize();
+        }
+    });
+
+    $.ajax({
+        type: "POST",
+        url: "/Societes/show_list",
+        success: function(response) {
+            $('#xp .wrapper_xp').html(response).promise().done(function(){
+                $('ul.list_xp').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    prevArrow:"<i class='fa fa-chevron-left' aria-hidden='true'></i>",
+                    nextArrow:"<li class='fa fa-chevron-right' aria-hidden='true'></i>",
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }
+                    ]
+                });
+            });
+        }
+    });
+
+    showfeed('all');
+
+    /* back to top */
+    window.onscroll = function() {scrollFunction()};
+
+    setTimeout(function(){
+        console.log($('.load'));
+        $('.load').addClass('loaded');
+    }, 1000);
+});
+
+/**
+ * EVENT
+ */
 
 $( window ).resize(function() {
     up_full_height()
 });
-
-
-$('ul.list_hobbies').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    prevArrow:"",
-    nextArrow:"",
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-            }
-        }
-    ]
-});
-
-$('.banner').parallax("center", .2, 0.1, true);
-
-
-$.ajax({
-    type: "POST",
-    url: "/Catskills/show_list",
-    success: function(response) {
-        $('#skills .wrapper_skills').html(response);
-        $('[data-toggle="popover"]').popover({trigger: "click", placement: "bottom"});
-        $('.wrapper_skill.md-size').equalize();
-    }
-});
-
-
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover({ trigger: "hover",placement:"bottom" });
-});
-
 
 $(document).on('click','.list_xp li[data-id]',function(){
     var id_s = $(this).data("id");
@@ -117,7 +197,6 @@ $("#contactForm").submit(function(e) {
             }else{
 
             }
-            console.log(data); // show response from the php script.
         }
     });
 
@@ -139,52 +218,8 @@ $(window).scroll(function (event) {
     }
 });
 
-$.ajax({
-    type: "POST",
-    url: "/Societes/show_list",
-    success: function(response) {
-        $('#xp .wrapper_xp').html(response).promise().done(function(){
-            $('ul.list_xp').slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                prevArrow:"<i class='fa fa-chevron-left' aria-hidden='true'></i>",
-                nextArrow:"<li class='fa fa-chevron-right' aria-hidden='true'></i>",
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-        });
-    }
-});
 
-showfeed('all');
 
-function showfeed(source){
-    $.ajax({
-        type: "POST",
-        url: "/feed",
-        data : 'source=' + source,
-        beforeSend: function() {
-            $('#feed .content_feed').html($('.wait').clone().removeClass('hidden'))
-        },
-        success: function(response) {
-            $('#feed .content_feed').html(response);
-            if($('#feed .list_cat_feed li.active').data('source') == 'all'){
-                $('#feed .list_cat_feed li.reset').hide('faste');
-            }else{
-                $('#feed .list_cat_feed li.reset').show('faste');
-            }
-        }
-    });
-}
 
 $(document).on('click','#feed .list_cat_feed li',function(){
     $('#feed .list_cat_feed li.active').removeClass('active');
@@ -204,21 +239,7 @@ $('a[href^="#"]').click(function(){
     return false;
 });
 
-/* back to top */
 
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    $('html, body').animate({
-        scrollTop:$('html, body').offset().top
-    }, 'slow');
-}
+

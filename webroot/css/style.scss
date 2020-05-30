@@ -613,7 +613,7 @@ footer{
 
   }
   .link-projetperso{
-    &:hover:&focus{
+    &:hover,&:focus{
       text-decoration: none;
       .wrapper-fiche-projet{
         background-color: $back-color2;
@@ -746,6 +746,23 @@ footer{
       }
     }
   }
+}
+
+.load{
+  @extend .banner;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1000000;
+  top: 0;
+  padding: 0;
+  min-height: auto;
+  opacity: 1;
+  transition: all .5s;
+  &.loaded{
+    opacity: 0;
+  }
+
 }
 
 @import "style_780";

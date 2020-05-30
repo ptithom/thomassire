@@ -61,6 +61,17 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->element('footer'); ?>
     </footer>
 
+    <div class="load">
+
+        <div class="banner full-height">
+            <div class="title" data-aos="fade-up">
+                <p class="top_title">Thomas Sire</p>
+                <div class="sub_title"> - DEVELOPPEUR WEB ET WEB MOBILE - </div>
+            </div>
+        </div>
+
+    </div>
+
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
 
     <div class="hidden wait">
