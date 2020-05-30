@@ -241,8 +241,12 @@ footer{
     bottom: 15px;
     right: 15px;
     font-size: 12px;
-    padding: 5px 10px;
+    padding: 10px 15px;
     background-color: #6a8293;
+    cursor: pointer;
+    i{
+      padding-left: 15px;
+    }
   }
   .wrapper_skill{
     margin: 0;

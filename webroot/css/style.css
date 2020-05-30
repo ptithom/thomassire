@@ -202,8 +202,11 @@ footer {
     bottom: 15px;
     right: 15px;
     font-size: 12px;
-    padding: 5px 10px;
-    background-color: #6a8293; }
+    padding: 10px 15px;
+    background-color: #6a8293;
+    cursor: pointer; }
+    #skills .view_project i {
+      padding-left: 15px; }
   #skills .wrapper_skill {
     margin: 0;
     margin-bottom: 30px;
