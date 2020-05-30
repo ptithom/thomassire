@@ -118,7 +118,7 @@ Avec du traitement de donnée, mise en forme de statistique, création de moteur
 
 
 
-    <?php elseif($SkillCats_id == 1): ?>
+    <?php elseif($SkillCats_id == 2): ?>
 
         <div class="col-12 col-md-6">
             <div class="project-skills">
