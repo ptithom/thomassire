@@ -59,7 +59,6 @@ function topFunction() {
 
 $(document).ready(function(){
 
-    console.log('fds');
 
     up_full_height();
 
@@ -85,14 +84,16 @@ $(document).ready(function(){
 
     AOS.init();
 
+    //$('[data-toggle="popover"]').popover({trigger: "click", placement: "bottom"});
+
 
     $.ajax({
         type: "POST",
         url: "/Catskills/show_list",
         success: function(response) {
             $('#skills .wrapper_skills').html(response);
-            $('[data-toggle="popover"]').popover({trigger: "click", placement: "bottom"});
-            $('.wrapper_skill.md-size').equalize();
+            //$('[data-toggle="popover"]').popover({trigger: "click", placement: "bottom"});
+            //$('.wrapper_skill.md-size').equalize();
         }
     });
 
@@ -128,7 +129,6 @@ $(document).ready(function(){
     window.onscroll = function() {scrollFunction()};
 
     setTimeout(function(){
-        console.log($('.load'));
         $('.load').addClass('loaded');
     }, 1000);
 });

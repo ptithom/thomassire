@@ -4,9 +4,7 @@
     <list default="true" id="b167621a-c92d-4173-b55a-cfae5bd3d8ed" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/debug_kit.sqlite" afterPath="$PROJECT_DIR$/tmp/debug_kit.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Layout/l_home.ctp" afterPath="$PROJECT_DIR$/src/Template/Layout/l_home.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/style.css" afterPath="$PROJECT_DIR$/webroot/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/style.css.map" afterPath="$PROJECT_DIR$/webroot/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/style.scss" afterPath="$PROJECT_DIR$/webroot/css/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/js/home.js" afterPath="$PROJECT_DIR$/webroot/js/home.js" />
     </list>
@@ -35,8 +33,8 @@
           <file leaf-file-name="l_home.ctp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Template/Layout/l_home.ctp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-16.791666">
-                  <caret line="63" column="20" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="20" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -55,36 +53,29 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/webroot/css/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-25.541666">
-                  <caret line="761" column="10" selection-start-line="761" selection-start-column="10" selection-end-line="761" selection-end-column="10" />
+                <state vertical-scroll-proportion="0.2866324">
+                  <caret line="686" column="0" selection-start-line="686" selection-start-column="0" selection-end-line="686" selection-end-column="0" />
                   <folding>
                     <element signature="e#6883#7000#0" expanded="false" />
                     <element signature="e#7018#7379#0" expanded="false" />
                     <element signature="e#7716#8811#0" expanded="false" />
-                    <element signature="e#12522#13909#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webroot/js/home.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7741935">
-                  <caret line="132" column="8" selection-start-line="132" selection-start-column="8" selection-end-line="132" selection-end-column="8" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#1601#1971#0" expanded="false" />
-                    <element signature="e#2386#3301#0" expanded="false" />
-                    <element signature="e#4079#4560#0" expanded="false" />
-                    <element signature="e#4631#5367#0" expanded="false" />
-                    <element signature="e#5417#5457#0" expanded="false" />
-                    <element signature="e#5495#5736#0" expanded="false" />
-                    <element signature="e#6029#6180#0" expanded="false" />
+                    <element signature="e#2452#3367#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -105,7 +96,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="ft-projet" />
       </map>
     </option>
   </component>
@@ -149,8 +140,8 @@
         <option value="$PROJECT_DIR$/src/Template/Element/hobbies.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Layout/l_home.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Element/banner_home.ctp" />
-        <option value="$PROJECT_DIR$/webroot/css/style.scss" />
         <option value="$PROJECT_DIR$/webroot/js/home.js" />
+        <option value="$PROJECT_DIR$/webroot/css/style.scss" />
       </list>
     </option>
   </component>
@@ -1087,8 +1078,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Layout/l_home.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.791666">
-          <caret line="63" column="20" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1101,32 +1092,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/webroot/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.541666">
-          <caret line="761" column="10" selection-start-line="761" selection-start-column="10" selection-end-line="761" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
           <folding>
-            <element signature="e#6883#7000#0" expanded="false" />
-            <element signature="e#7018#7379#0" expanded="false" />
-            <element signature="e#7716#8811#0" expanded="false" />
-            <element signature="e#12522#13909#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#2452#3367#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/js/home.js">
+    <entry file="file://$PROJECT_DIR$/webroot/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7741935">
-          <caret line="132" column="8" selection-start-line="132" selection-start-column="8" selection-end-line="132" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.2866324">
+          <caret line="686" column="0" selection-start-line="686" selection-start-column="0" selection-end-line="686" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1601#1971#0" expanded="false" />
-            <element signature="e#2386#3301#0" expanded="false" />
-            <element signature="e#4079#4560#0" expanded="false" />
-            <element signature="e#4631#5367#0" expanded="false" />
-            <element signature="e#5417#5457#0" expanded="false" />
-            <element signature="e#5495#5736#0" expanded="false" />
-            <element signature="e#6029#6180#0" expanded="false" />
+            <element signature="e#6883#7000#0" expanded="false" />
+            <element signature="e#7018#7379#0" expanded="false" />
+            <element signature="e#7716#8811#0" expanded="false" />
           </folding>
         </state>
       </provider>
