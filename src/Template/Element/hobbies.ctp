@@ -4,10 +4,9 @@
     <div class="col-md-8">
         <div class="contant_presentation" data-aos="fade-left">
             <p>
-                Développeur web, curieux et touche a tout.
-                J'aime créer et peaufiner autant que possible l'UX et la sémantique de ce que je produis,
-                pour que les utilisateurs puissent revenir avec la meilleure expérience possible.<br>
-                Persuadé que "l'internet" d'aujourd'hui doit être portable, intuitif et percutant.
+                Développeur web experimenté, passionné et touche a tout.<br>
+                Je mets l'accentque possible la sémantique et l'UX de ce que je produis.<br>
+                Persuadé que les plate-forme d'aujourd'hui doivent être adaptables, intuitives et percutantes.
             </p>
 
             <!--<p>-->
@@ -16,19 +15,21 @@
             <!--</p>-->
         </div>
         <div class="citation">
-            "LE WEB NE VA PAS CHANGER LE MONDE, CERTAINEMENT PAS DANS LES DIX PROCHAINES ANNÉES. IL VA AUGMENTER LE MONDE."
+            "Le web ne va pas chnager le monde, certainement pas dans les dix prochianes années. Il va augmenter le monde."
             STEVE JOBS (1996)
         </div>
 
     </div>
     <div class="col-md-3">
-
+        <div class="photo_perso" data-aos="fade-right">
+            <img src="/webroot/img/thomassire.png"  alt="photo thomas sire">
+        </div>
     </div>
 </div>
 
 <div class="wrapper_hobbies">
 
-    <div class="row">
+    <!--<div class="row">
         <div class="col-12">
             <div class="sub title">
                 Personnalité et Passions
@@ -36,7 +37,7 @@
         </div>
     </div>
 
-    <!--<ul class="list_hobbies">
+    <ul class="list_hobbies">
         <li class="hobbie">
             <i class="fa fa-camera-retro" aria-hidden="true"
                data-toggle="popover" placement="bottom" data-content="La photographie" ></i>

@@ -37,16 +37,20 @@ class ProjectsController extends AppController
 
         $projects = null;
         if(!empty($SkillCats_id)){
-            $projects = $this->Projects->SkillsProjects->find()
-                ->where(['skill_id' => $SkillCats_id])
-                ->contain('Projects')
-                ->toArray();
+            //$projects = $this->Projects->SkillsProjects->find()
+             //   ->where(['skill_id' => $SkillCats_id])
+             //   ->contain('Projects')
+             //   ->toArray();
         }
 
 
-        debug($projects);
+        if($SkillCats_id == 1){
 
-        die('En constrction !');
+        }elseif($SkillCats_id == 1){
+
+        }
+        $this->set(["SkillCats_id" => $SkillCats_id]);
+        //die('En constrction !');
 
     }
 

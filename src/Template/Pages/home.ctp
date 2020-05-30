@@ -1,7 +1,7 @@
 <?= $this->element('banner_home'); ?>
 
 <section id="skills" class="container clearfix">
-    <h2 class="title">Skills</h2>
+   <h2 class="title"> <a href="#skills">Skills</a></h2>
     <div class="wrapper_skills"></div>
 </section>
 
@@ -46,10 +46,10 @@
     <div class="container clearfix">
         <h2 class="title">Contact</h2>
         <div class="content">
-            <p class="up">Pour tout demande et devis</p>
+            <p class="up">Pour toutes demandes </p>
             Je suis a l'écoute de toute proposition, je suis actuelement localisé dans les Pays de la loire plus précisément a Angers.
         </div>
-        <div class="wrapper_contact">
+        <div class="wrapper_contact" data-aos="fade-up">
             <div class="message hidden"></div>
             <form  id="contactForm" action="/Pages/contact" method="post">
             <div class="form-group">
