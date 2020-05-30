@@ -92,6 +92,10 @@ $(document).ready(function(){
         url: "/Catskills/show_list",
         success: function(response) {
             $('#skills .wrapper_skills').html(response);
+            setTimeout(function(){
+                $('.load').addClass('loaded');
+            }, 500);
+
             //$('[data-toggle="popover"]').popover({trigger: "click", placement: "bottom"});
             //$('.wrapper_skill.md-size').equalize();
         }
@@ -129,7 +133,7 @@ $(document).ready(function(){
     window.onscroll = function() {scrollFunction()};
 
     setTimeout(function(){
-        $('.load').addClass('loaded');
+
     }, 1000);
 });
 
